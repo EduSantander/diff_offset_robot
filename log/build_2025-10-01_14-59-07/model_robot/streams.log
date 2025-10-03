@@ -1,0 +1,22 @@
+[0.451s] Invoking command in '/home/edu/diff_offset_robot/src/model_robot': PYTHONPATH=/home/edu/diff_offset_robot/build/model_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/edu/diff_offset_robot/install/model_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/model_robot build --build-base /home/edu/diff_offset_robot/build/model_robot/build install --record /home/edu/diff_offset_robot/build/model_robot/install.log --single-version-externally-managed install_data
+[0.632s] running egg_info
+[0.632s] writing ../../build/model_robot/model_robot.egg-info/PKG-INFO
+[0.633s] writing dependency_links to ../../build/model_robot/model_robot.egg-info/dependency_links.txt
+[0.633s] writing entry points to ../../build/model_robot/model_robot.egg-info/entry_points.txt
+[0.633s] writing requirements to ../../build/model_robot/model_robot.egg-info/requires.txt
+[0.633s] writing top-level names to ../../build/model_robot/model_robot.egg-info/top_level.txt
+[0.634s] reading manifest file '../../build/model_robot/model_robot.egg-info/SOURCES.txt'
+[0.634s] adding license file 'LICENSE'
+[0.635s] writing manifest file '../../build/model_robot/model_robot.egg-info/SOURCES.txt'
+[0.635s] running build
+[0.635s] running build_py
+[0.635s] running install
+[0.635s] running install_lib
+[0.636s] running install_data
+[0.636s] copying launch/gazebo.launch.py -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/launch
+[0.636s] running install_egg_info
+[0.638s] removing '/home/edu/diff_offset_robot/install/model_robot/lib/python3.10/site-packages/model_robot-0.0.0-py3.10.egg-info' (and everything under it)
+[0.638s] Copying ../../build/model_robot/model_robot.egg-info to /home/edu/diff_offset_robot/install/model_robot/lib/python3.10/site-packages/model_robot-0.0.0-py3.10.egg-info
+[0.639s] running install_scripts
+[0.653s] writing list of installed files to '/home/edu/diff_offset_robot/build/model_robot/install.log'
+[0.669s] Invoked command in '/home/edu/diff_offset_robot/src/model_robot' returned '0': PYTHONPATH=/home/edu/diff_offset_robot/build/model_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/edu/diff_offset_robot/install/model_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/model_robot build --build-base /home/edu/diff_offset_robot/build/model_robot/build install --record /home/edu/diff_offset_robot/build/model_robot/install.log --single-version-externally-managed install_data
