@@ -8,7 +8,7 @@
     name="base_link">
     <inertial>
       <origin
-        xyz="0.13872 4.8572E-17 0.00028145"
+        xyz="0.026474 -6.9389E-18 0.020281"
         rpy="0 0 0" />
       <mass
         value="7.674" />
@@ -88,7 +88,7 @@
     name="left_wheel_joint"
     type="continuous">
     <origin
-      xyz="0 0.13 0"
+      xyz="-0.11225 0.13 0.02"
       rpy="-1.5708 0.05745 0" />
     <parent
       link="base_link" />
@@ -147,7 +147,7 @@
     name="right_wheel_joint"
     type="continuous">
     <origin
-      xyz="0 -0.13 0"
+      xyz="-0.11225 -0.13 0.02"
       rpy="-1.5708 0 0" />
     <parent
       link="base_link" />
@@ -206,7 +206,7 @@
     name="top_base_joint"
     type="revolute">
     <origin
-      xyz="0.11225 0 0.03"
+      xyz="0 0 0.05"
       rpy="0 0 0" />
     <parent
       link="base_link" />
@@ -267,7 +267,7 @@
     name="lidar_joint"
     type="continuous">
     <origin
-      xyz="0.29225 0 0.03"
+      xyz="0.18 0 0.05"
       rpy="0 0 0" />
     <parent
       link="base_link" />
@@ -282,7 +282,6 @@
       damping="0.1"
       friction="0.1" />
   </joint>
-
   <link
     name="caster_wheel_link">
     <inertial>
@@ -327,7 +326,7 @@
     name="caster_wheel_joint"
     type="fixed">
     <origin
-      xyz="0.23725 0 -0.025"
+      xyz="0.125 0 -0.005"
       rpy="-3.1416 0 -0.53405" />
     <parent
       link="base_link" />
@@ -338,7 +337,7 @@
     <dynamics
       damping="0"
       friction="0" />
-  </joint> 
+  </joint>
 
   <gazebo>
     <plugin name="two_wheeled_robot_diff_drive" filename="libgazebo_ros_diff_drive.so">
