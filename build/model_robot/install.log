@@ -5,6 +5,7 @@
 /home/edu/diff_offset_robot/install/model_robot/share/model_robot/urdf/diff_offset_robot.urdf
 /home/edu/diff_offset_robot/install/model_robot/share/model_robot/launch/gazebo.launch.py
 /home/edu/diff_offset_robot/install/model_robot/share/model_robot/launch/display.launch.py
+/home/edu/diff_offset_robot/install/model_robot/share/model_robot/meshes/body_wheel_link.STL
 /home/edu/diff_offset_robot/install/model_robot/share/model_robot/meshes/lidar_link.STL
 /home/edu/diff_offset_robot/install/model_robot/share/model_robot/meshes/base_link.STL
 /home/edu/diff_offset_robot/install/model_robot/share/model_robot/meshes/top_base_link.STL
