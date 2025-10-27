@@ -8,17 +8,17 @@
     name="base_link">
     <inertial>
       <origin
-        xyz="0.00767413610313483 -1.59594559789866E-16 0.0244882600344697"
+        xyz="0.0076741 1.382E-07 0.0044883"
         rpy="0 0 0" />
       <mass
-        value="6.20721211987107" />
+        value="16.759" />
       <inertia
-        ixx="0.065603714804586"
-        ixy="-2.62715981130129E-17"
-        ixz="-0.00271747552637359"
-        iyy="0.107958443318796"
-        iyz="1.27853406126115E-18"
-        izz="0.1714956110287" />
+        ixx="0.17713"
+        ixy="-2.388E-17"
+        ixz="-0.0073372"
+        iyy="0.29149"
+        iyz="1.8081E-15"
+        izz="0.46304" />
     </inertial>
     <visual>
       <origin
@@ -31,7 +31,7 @@
       <material
         name="">
         <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+          rgba="0.86667 0.9098 1 1" />
       </material>
     </visual>
     <collision>
@@ -48,16 +48,16 @@
     name="left_wheel_link">
     <inertial>
       <origin
-        xyz="0 1.3115E-15 0.04781"
+        xyz="2.2204E-16 -7.7716E-16 0.04781"
         rpy="0 0 0" />
       <mass
         value="0.37174" />
       <inertia
         ixx="0.00039822"
-        ixy="-3.0493E-19"
-        ixz="-3.7264E-20"
+        ixy="7.4539E-19"
+        ixz="4.3609E-19"
         iyy="0.00039822"
-        iyz="1.2533E-18"
+        iyz="-2.286E-18"
         izz="0.00057276" />
     </inertial>
     <visual>
@@ -88,8 +88,8 @@
     name="left_wheel_joint"
     type="continuous">
     <origin
-      xyz="-0.11225 0.13 0.02"
-      rpy="-1.5708 0.05745 0" />
+      xyz="-0.11225 0.13 0"
+      rpy="1.5708 0.57871 3.1416" />
     <parent
       link="base_link" />
     <child
@@ -99,24 +99,21 @@
     <limit
       effort="100"
       velocity="100" />
-    <dynamics
-      damping="0.1"
-      friction="0.1" />
   </joint>
   <link
     name="right_wheel_link">
     <inertial>
       <origin
-        xyz="4.4409E-16 3.6429E-16 -0.04781"
+        xyz="8.8818E-16 -2.2204E-16 -0.04781"
         rpy="0 0 0" />
       <mass
         value="0.37174" />
       <inertia
         ixx="0.00039822"
-        ixy="1.7549E-18"
-        ixz="-2.7572E-19"
+        ixy="-2.863E-19"
+        ixz="3.8539E-19"
         iyy="0.00039822"
-        iyz="7.3638E-20"
+        iyz="3.15E-19"
         izz="0.00057276" />
     </inertial>
     <visual>
@@ -147,8 +144,8 @@
     name="right_wheel_joint"
     type="continuous">
     <origin
-      xyz="-0.11225 -0.13 0.02"
-      rpy="-1.5708 0 0" />
+      xyz="-0.11225 -0.13 0"
+      rpy="-1.5708 -0.061252 0" />
     <parent
       link="base_link" />
     <child
@@ -158,86 +155,22 @@
     <limit
       effort="100"
       velocity="100" />
-    <dynamics
-      damping="0.1"
-      friction="0.1" />
-  </joint>
-  <link
-    name="top_base_link">
-    <inertial>
-      <origin
-        xyz="4.4409E-16 -1.6653E-16 0.043846"
-        rpy="0 0 0" />
-      <mass
-        value="6.1261" />
-      <inertia
-        ixx="0.092849"
-        ixy="2.2239E-18"
-        ixz="6.6189E-19"
-        iyy="0.092849"
-        iyz="-1.3571E-19"
-        izz="0.18437" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://model_robot/meshes/top_base_link.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.48235 0.61176 1 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://model_robot/meshes/top_base_link.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="top_base_joint"
-    type="revolute">
-    <origin
-      xyz="0 0 0.05"
-      rpy="0 0 0" />
-    <parent
-      link="base_link" />
-    <child
-      link="top_base_link" />
-    <axis
-      xyz="0 0 1" />
-    <limit
-      lower="0"
-      upper="6.2832"
-      effort="100"
-      velocity="100" />
-    <dynamics
-      damping="0.1"
-      friction="0.1" />
   </joint>
   <link
     name="lidar_link">
     <inertial>
       <origin
-        xyz="0 -6.9389E-18 0.0099837"
+        xyz="-2.2204E-16 0 0.0099837"
         rpy="0 0 0" />
       <mass
-        value="0.15681" />
+        value="0.19445" />
       <inertia
-        ixx="0.00010306"
-        ixy="6.7763E-21"
-        ixz="-1.185E-21"
-        iyy="0.00010306"
-        iyz="2.1885E-23"
-        izz="0.00019569" />
+        ixx="0.00012779"
+        ixy="5.0415E-21"
+        ixz="1.198E-18"
+        iyy="0.00012779"
+        iyz="1.1973E-18"
+        izz="0.00024266" />
     </inertial>
     <visual>
       <origin
@@ -250,7 +183,7 @@
       <material
         name="">
         <color
-          rgba="0.94118 0.16863 0 1" />
+          rgba="0.69804 0.69804 0.69804 1" />
       </material>
     </visual>
     <collision>
@@ -267,7 +200,7 @@
     name="lidar_joint"
     type="continuous">
     <origin
-      xyz="0.18 0 0.05"
+      xyz="0.18 0 0.03"
       rpy="0 0 0" />
     <parent
       link="base_link" />
@@ -278,25 +211,80 @@
     <limit
       effort="100"
       velocity="100" />
-    <dynamics
-      damping="0.1"
-      friction="0.1" />
+  </joint>
+  <link
+    name="top_base_link">
+    <inertial>
+      <origin
+        xyz="8.8818E-16 8.8818E-16 0.043846"
+        rpy="0 0 0" />
+      <mass
+        value="16.54" />
+      <inertia
+        ixx="0.25069"
+        ixy="4.8708E-18"
+        ixz="2.5866E-15"
+        iyy="0.25069"
+        iyz="2.5915E-15"
+        izz="0.4978" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://model_robot/meshes/top_base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.86667 0.9098 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://model_robot/meshes/top_base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="top_base_joint"
+    type="revolute">
+    <origin
+      xyz="0 0 0.03"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="top_base_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="6.28"
+      effort="0"
+      velocity="0" />
   </joint>
   <link
     name="body_wheel_link">
     <inertial>
       <origin
-        xyz="0.0039086 -6.4483E-06 0.0095064"
+        xyz="0.0057441 -4.342E-05 0.011555"
         rpy="0 0 0" />
       <mass
-        value="0.038337" />
+        value="0.045198" />
       <inertia
-        ixx="6.4036E-06"
+        ixx="6.9323E-06"
         ixy="9.6169E-12"
         ixz="-8.202E-07"
-        iyy="6.8878E-06"
+        iyy="6.9326E-06"
         iyz="4.6142E-11"
-        izz="8.465E-06" />
+        izz="8.9936E-06" />
     </inertial>
     <visual>
       <origin
@@ -326,8 +314,8 @@
     name="body_wheel_joint"
     type="continuous">
     <origin
-      xyz="0.125 0 0.004"
-      rpy="3.1416 0 0.0019842" />
+      xyz="0.125 0 -0.016"
+      rpy="-3.1416 0 0" />
     <parent
       link="base_link" />
     <child
@@ -337,25 +325,22 @@
     <limit
       effort="100"
       velocity="100" />
-    <dynamics
-      damping="0.1"
-      friction="0.1" />
   </joint>
   <link
     name="caster_wheel_link">
     <inertial>
       <origin
-        xyz="-1.1102E-16 5.5511E-17 0"
+        xyz="0 2.2204E-16 0"
         rpy="0 0 0" />
       <mass
-        value="0.01313" />
+        value="0.015177" />
       <inertia
-        ixx="1.3177E-06"
-        ixy="-1.0588E-22"
-        ixz="9.6573E-23"
-        iyy="1.3177E-06"
-        iyz="-1.5696E-22"
-        izz="1.8956E-06" />
+        ixx="1.5231E-06"
+        ixy="-2.6784E-37"
+        ixz="8.2139E-23"
+        iyy="1.5231E-06"
+        iyz="-3.5495E-21"
+        izz="2.191E-06" />
     </inertial>
     <visual>
       <origin
@@ -368,7 +353,7 @@
       <material
         name="">
         <color
-          rgba="0.25098 0.25098 0.25098 1" />
+          rgba="0.29804 0.29804 0.29804 1" />
       </material>
     </visual>
     <collision>
@@ -386,7 +371,7 @@
     type="continuous">
     <origin
       xyz="0.016 0 0.023"
-      rpy="1.5708 -0.40647 0" />
+      rpy="1.5708 0 0" />
     <parent
       link="body_wheel_link" />
     <child
@@ -396,12 +381,9 @@
     <limit
       effort="100"
       velocity="100" />
-    <dynamics
-      damping="0.1"
-      friction="0.1" />
   </joint>
 
-  <gazebo>
+<gazebo>
     <plugin name="two_wheeled_robot_diff_drive" filename="libgazebo_ros_diff_drive.so">
  
       <update_rate>100</update_rate>
