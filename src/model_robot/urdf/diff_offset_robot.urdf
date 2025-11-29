@@ -8,17 +8,17 @@
     name="base_link">
     <inertial>
       <origin
-        xyz="0.0076741 1.382E-07 0.0044883"
+        xyz="0.027195 -1.382E-07 1.4192E-05"
         rpy="0 0 0" />
       <mass
-        value="16.759" />
+        value="7.7306" />
       <inertia
-        ixx="0.17713"
-        ixy="-2.388E-17"
-        ixz="-0.0073372"
-        iyy="0.29149"
-        iyz="1.8081E-15"
-        izz="0.46304" />
+        ixx="0.08923"
+        ixy="-1.6849E-17"
+        ixz="-0.00013721"
+        iyy="0.12656"
+        iyz="-1.6354E-19"
+        izz="0.21251" />
     </inertial>
     <visual>
       <origin
@@ -31,7 +31,7 @@
       <material
         name="">
         <color
-          rgba="0.86667 0.9098 1 1" />
+          rgba="0.79216 0.81961 0.93333 1" />
       </material>
     </visual>
     <collision>
@@ -48,16 +48,16 @@
     name="left_wheel_link">
     <inertial>
       <origin
-        xyz="2.2204E-16 -7.7716E-16 0.04781"
+        xyz="-2.2204E-16 -3.2613E-16 0.04781"
         rpy="0 0 0" />
       <mass
         value="0.37174" />
       <inertia
         ixx="0.00039822"
-        ixy="7.4539E-19"
-        ixz="4.3609E-19"
+        ixy="-1.2163E-18"
+        ixz="-3.573E-19"
         iyy="0.00039822"
-        iyz="-2.286E-18"
+        iyz="-9.9603E-19"
         izz="0.00057276" />
     </inertial>
     <visual>
@@ -89,7 +89,7 @@
     type="continuous">
     <origin
       xyz="-0.11225 0.13 0"
-      rpy="1.5708 0.57871 3.1416" />
+      rpy="-1.5708 0.05745 0" />
     <parent
       link="base_link" />
     <child
@@ -99,21 +99,25 @@
     <limit
       effort="100"
       velocity="100" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
   </joint>
+
   <link
     name="right_wheel_link">
     <inertial>
       <origin
-        xyz="8.8818E-16 -2.2204E-16 -0.04781"
+        xyz="4.4409E-16 2.3245E-16 -0.04781"
         rpy="0 0 0" />
       <mass
         value="0.37174" />
       <inertia
         ixx="0.00039822"
-        ixy="-2.863E-19"
-        ixz="3.8539E-19"
+        ixy="1.5059E-18"
+        ixz="-3.6035E-19"
         iyy="0.00039822"
-        iyz="3.15E-19"
+        iyz="-6.9788E-19"
         izz="0.00057276" />
     </inertial>
     <visual>
@@ -145,7 +149,7 @@
     type="continuous">
     <origin
       xyz="-0.11225 -0.13 0"
-      rpy="-1.5708 -0.061252 0" />
+      rpy="-1.5708 0 0" />
     <parent
       link="base_link" />
     <child
@@ -155,22 +159,87 @@
     <limit
       effort="100"
       velocity="100" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
   </joint>
+  <link
+    name="top_base_link">
+    <inertial>
+      <origin
+        xyz="4.4409E-16 -1.5959E-16 0.043846"
+        rpy="0 0 0" />
+      <mass
+        value="6.1261" />
+      <inertia
+        ixx="0.092849"
+        ixy="2.2239E-18"
+        ixz="-1.0728E-18"
+        iyy="0.092849"
+        iyz="-4.5642E-20"
+        izz="0.18437" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://model_robot/meshes/top_base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.48235 0.61176 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://model_robot/meshes/top_base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="top_base_joint"
+    type="revolute">
+    <origin
+      xyz="0 0 0.03"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="top_base_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="6.2832"
+      effort="100"
+      velocity="100" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+
   <link
     name="lidar_link">
     <inertial>
       <origin
-        xyz="-2.2204E-16 0 0.0099837"
+        xyz="0 -6.9389E-18 0.0099837"
         rpy="0 0 0" />
       <mass
-        value="0.19445" />
+        value="0.15681" />
       <inertia
-        ixx="0.00012779"
-        ixy="5.0415E-21"
-        ixz="1.198E-18"
-        iyy="0.00012779"
-        iyz="1.1973E-18"
-        izz="0.00024266" />
+        ixx="0.00010306"
+        ixy="-6.0185E-36"
+        ixz="-2.3099E-21"
+        iyy="0.00010306"
+        iyz="5.8547E-22"
+        izz="0.00019569" />
     </inertial>
     <visual>
       <origin
@@ -183,7 +252,7 @@
       <material
         name="">
         <color
-          rgba="0.69804 0.69804 0.69804 1" />
+          rgba="0.94118 0.16863 0 1" />
       </material>
     </visual>
     <collision>
@@ -212,229 +281,39 @@
       effort="100"
       velocity="100" />
   </joint>
-  <link
-    name="top_base_link">
-    <inertial>
-      <origin
-        xyz="8.8818E-16 8.8818E-16 0.043846"
-        rpy="0 0 0" />
-      <mass
-        value="16.54" />
-      <inertia
-        ixx="0.25069"
-        ixy="4.8708E-18"
-        ixz="2.5866E-15"
-        iyy="0.25069"
-        iyz="2.5915E-15"
-        izz="0.4978" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://model_robot/meshes/top_base_link.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.86667 0.9098 1 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://model_robot/meshes/top_base_link.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="top_base_joint"
-    type="revolute">
-    <origin
-      xyz="0 0 0.03"
-      rpy="0 0 0" />
-    <parent
-      link="base_link" />
-    <child
-      link="top_base_link" />
-    <axis
-      xyz="0 0 1" />
-    <limit
-      lower="0"
-      upper="6.28"
-      effort="0"
-      velocity="0" />
-  </joint>
-  <link
-    name="body_wheel_link">
-    <inertial>
-      <origin
-        xyz="0.0057441 -4.342E-05 0.011555"
-        rpy="0 0 0" />
-      <mass
-        value="0.045198" />
-      <inertia
-        ixx="6.9323E-06"
-        ixy="9.6169E-12"
-        ixz="-8.202E-07"
-        iyy="6.9326E-06"
-        iyz="4.6142E-11"
-        izz="8.9936E-06" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://model_robot/meshes/body_wheel_link.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.77647 0.75686 0.73725 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://model_robot/meshes/body_wheel_link.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="body_wheel_joint"
-    type="continuous">
-    <origin
-      xyz="0.125 0 -0.016"
-      rpy="-3.1416 0 0" />
-    <parent
-      link="base_link" />
-    <child
-      link="body_wheel_link" />
-    <axis
-      xyz="0 0 1" />
-    <limit
-      effort="100"
-      velocity="100" />
-  </joint>
-  <link
-    name="caster_wheel_link">
-    <inertial>
-      <origin
-        xyz="0 2.2204E-16 0"
-        rpy="0 0 0" />
-      <mass
-        value="0.015177" />
-      <inertia
-        ixx="1.5231E-06"
-        ixy="-2.6784E-37"
-        ixz="8.2139E-23"
-        iyy="1.5231E-06"
-        iyz="-3.5495E-21"
-        izz="2.191E-06" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://model_robot/meshes/caster_wheel_link.STL" />
-      </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.29804 0.29804 0.29804 1" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://model_robot/meshes/caster_wheel_link.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="caster_wheel_joint"
-    type="continuous">
-    <origin
-      xyz="0.016 0 0.023"
-      rpy="1.5708 0 0" />
-    <parent
-      link="body_wheel_link" />
-    <child
-      link="caster_wheel_link" />
-    <axis
-      xyz="0 0 1" />
-    <limit
-      effort="100"
-      velocity="100" />
-  </joint>
 
-<gazebo>
-    <plugin name="two_wheeled_robot_diff_drive" filename="libgazebo_ros_diff_drive.so">
- 
-      <update_rate>100</update_rate>
-      
-      <!-- wheels -->
-      <left_joint>left_wheel_joint</left_joint>
-      <right_joint>right_wheel_joint</right_joint>
- 
-      <!-- kinematics -->
-      <wheel_separation>0.36</wheel_separation>
-      <wheel_diameter>0.11</wheel_diameter>
- 
-      <!-- limits -->
-      <max_wheel_torque>20</max_wheel_torque>
-      <max_wheel_acceleration>20.0</max_wheel_acceleration>
- 
-      <!-- Receive velocity commands on this ROS topic -->
-      <command_topic>cmd_vel</command_topic>
- 
-      <!-- output -->
-      <!-- When false, publish no wheel odometry data to a ROS topic -->
-      <publish_odom>true</publish_odom>
- 
-      <!-- When true, publish coordinate transform from odom to base_footprint -->
-      <!-- I usually use the robot_localization package to publish this transform -->  
-      <publish_odom_tf>true</publish_odom_tf>
-     
-      <!-- When true, publish coordinate transform from base_link to the wheels -->
-      <!-- The robot_state_publisher package is often used to publish this transform -->  
-      <publish_wheel_tf>true</publish_wheel_tf>
- 
-      <odometry_topic>odom</odometry_topic>
-      <odometry_frame>odom_link</odometry_frame>
-      <robot_base_frame>base_link</robot_base_frame>
- 
-      <odometry_source>1</odometry_source>
-      <ros>
-        <remapping>odom:=wheel/odometry</remapping>
-      </ros>
-    </plugin>
-  </gazebo>
+  <ros2_control name="diff_offset_robot_control" type="system">
+    <hardware>
+      <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+    </hardware>
 
+    <joint name="left_wheel_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="right_wheel_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="top_base_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+  </ros2_control>
+
+  <!-- GAZEBO PLUGINS -->
   <gazebo>
-    <plugin name="gazebo_ros_joint_state_publisher"
-        filename="libgazebo_ros_joint_state_publisher.so">
-        <update_rate>100</update_rate>
-        <joint_name>top_base_joint</joint_name>
-        <joint_name>lidar_joint</joint_name>
-        <joint_name>body_wheel_joint</joint_name>
-        <joint_name>caster_wheel_joint</joint_name>
+    <plugin name="gazebo_lidar_joint_state" filename="libgazebo_ros_joint_state_publisher.so">
+      <update_rate>100</update_rate>
+      <joint_name>lidar_joint</joint_name>
     </plugin>
+
+    <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so"/>
   </gazebo>
 
 </robot>

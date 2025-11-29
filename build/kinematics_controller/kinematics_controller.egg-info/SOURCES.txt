@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/kinematics_controller/kinematics_controller.egg-info/PKG-INFO
+../../build/kinematics_controller/kinematics_controller.egg-info/SOURCES.txt
+../../build/kinematics_controller/kinematics_controller.egg-info/dependency_links.txt
+../../build/kinematics_controller/kinematics_controller.egg-info/entry_points.txt
+../../build/kinematics_controller/kinematics_controller.egg-info/requires.txt
+../../build/kinematics_controller/kinematics_controller.egg-info/top_level.txt
+../../build/kinematics_controller/kinematics_controller.egg-info/zip-safe
+kinematics_controller/__init__.py
+kinematics_controller/kinematics_node.py
+resource/kinematics_controller
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

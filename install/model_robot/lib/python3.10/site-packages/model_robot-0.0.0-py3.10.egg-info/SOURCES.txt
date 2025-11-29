@@ -9,11 +9,10 @@ setup.py
 ../../build/model_robot/model_robot.egg-info/requires.txt
 ../../build/model_robot/model_robot.egg-info/top_level.txt
 ../../build/model_robot/model_robot.egg-info/zip-safe
+config/ros2_controller.yaml
 launch/display.launch.py
 launch/gazebo.launch.py
 meshes/base_link.STL
-meshes/body_wheel_link.STL
-meshes/caster_wheel_link.STL
 meshes/left_wheel_link.STL
 meshes/lidar_link.STL
 meshes/right_wheel_link.STL
