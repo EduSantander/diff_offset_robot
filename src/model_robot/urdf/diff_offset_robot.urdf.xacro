@@ -1,7 +1,5 @@
-<!-- ?xml version="1.0" encoding="utf-8"? -->
-<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
-     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
-     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<?xml version="1.0" encoding="utf-8"?>
+
 <robot
   name="diff_offset_robot">
   <link
@@ -306,14 +304,15 @@
     </joint>
   </ros2_control>
 
-  <!-- GAZEBO PLUGINS -->
   <gazebo>
     <plugin name="gazebo_lidar_joint_state" filename="libgazebo_ros_joint_state_publisher.so">
       <update_rate>100</update_rate>
       <joint_name>lidar_joint</joint_name>
     </plugin>
 
-    <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so"/>
+    <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+      <parameters>$(find model_robot)/config/ros2_controller.yaml</parameters>
+    </plugin>
   </gazebo>
 
 </robot>

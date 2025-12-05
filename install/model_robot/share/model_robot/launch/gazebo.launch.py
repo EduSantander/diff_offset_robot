@@ -5,16 +5,21 @@ from launch.actions import DeclareLaunchArgument, ExecuteProcess, RegisterEventH
 from launch_ros.actions import Node
 from launch.event_handlers import OnProcessExit
 from launch.substitutions import LaunchConfiguration
+import xacro # ⬅️ AHORA SÍ LO NECESITAMOS
 
 def generate_launch_description():
 
     pkg_share = get_package_share_directory('model_robot')
     use_sim_time = LaunchConfiguration('use_sim_time')
 
-    # URDF
-    urdf_file = os.path.join(pkg_share, 'urdf', 'diff_offset_robot.urdf')
-    with open(urdf_file, 'r') as infp:
-        robot_desc = infp.read()
+    # 1. Definir la ruta del archivo (AHORA CON LA EXTENSIÓN NUEVA)
+    # Antes: 'diff_offset_robot.urdf'
+    # Ahora:
+    xacro_file = os.path.join(pkg_share, 'urdf', 'diff_offset_robot.urdf.xacro')
+
+    # 2. PROCESAR (Esto sigue igual, xacro se come lo que le eches)
+    doc = xacro.process_file(xacro_file)
+    robot_desc = doc.toxml()
 
     # Gazebo
     gazebo = ExecuteProcess(

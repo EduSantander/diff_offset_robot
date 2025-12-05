@@ -54,7 +54,7 @@ class DiffOffsetKinematics(Node):
         self.pub_wheels = self.create_publisher(Float64MultiArray,
                                                 self.wheel_cmd_topic, 10)
 
-        self.pub_platform = self.create_publisher(Float64,
+        self.pub_platform = self.create_publisher(Float64MultiArray,
                                                   self.platform_cmd_topic, 10)
 
         self.pub_js = self.create_publisher(JointState, "joint_states", 10)
@@ -143,9 +143,9 @@ class DiffOffsetKinematics(Node):
         self.pub_wheels.publish(wheels)
 
         # plataforma: Float64 simple
-        msg = Float64()
-        msg.data = float(theta_p_dot)
-        self.pub_platform.publish(msg)
+        msg_platform = Float64MultiArray()
+        msg_platform.data = [float(theta_p_dot)] # Nota los corchetes []
+        self.pub_platform.publish(msg_platform)
 
     # ----------------------------------------------------------
     #          4) PUBLICAR JOINT STATES
