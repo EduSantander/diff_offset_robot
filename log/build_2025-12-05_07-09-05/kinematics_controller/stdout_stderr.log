@@ -1,0 +1,23 @@
+running egg_info
+writing ../../build/kinematics_controller/kinematics_controller.egg-info/PKG-INFO
+writing dependency_links to ../../build/kinematics_controller/kinematics_controller.egg-info/dependency_links.txt
+writing entry points to ../../build/kinematics_controller/kinematics_controller.egg-info/entry_points.txt
+writing requirements to ../../build/kinematics_controller/kinematics_controller.egg-info/requires.txt
+writing top-level names to ../../build/kinematics_controller/kinematics_controller.egg-info/top_level.txt
+reading manifest file '../../build/kinematics_controller/kinematics_controller.egg-info/SOURCES.txt'
+writing manifest file '../../build/kinematics_controller/kinematics_controller.egg-info/SOURCES.txt'
+running build
+running build_py
+copying kinematics_controller/custom_teleop.py -> /home/edu/diff_offset_robot/build/kinematics_controller/build/lib/kinematics_controller
+running install
+running install_lib
+copying /home/edu/diff_offset_robot/build/kinematics_controller/build/lib/kinematics_controller/custom_teleop.py -> /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller
+byte-compiling /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/custom_teleop.py to custom_teleop.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/kinematics_controller/kinematics_controller.egg-info to /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller-0.0.0-py3.10.egg-info
+running install_scripts
+Installing kinematics_node script to /home/edu/diff_offset_robot/install/kinematics_controller/lib/kinematics_controller
+Installing teleop_node script to /home/edu/diff_offset_robot/install/kinematics_controller/lib/kinematics_controller
+writing list of installed files to '/home/edu/diff_offset_robot/build/kinematics_controller/install.log'

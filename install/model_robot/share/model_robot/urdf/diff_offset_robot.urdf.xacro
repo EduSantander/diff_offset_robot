@@ -95,8 +95,8 @@
     <axis
       xyz="0 0 1" />
     <limit
-      effort="100"
-      velocity="100" />
+      effort="10"
+      velocity="20" />
     <dynamics
       damping="0.1"
       friction="0.1" />
@@ -129,7 +129,7 @@
       <material
         name="">
         <color
-          rgba="0.019608 0 0 1" />
+          rgba="0.019608 0 0 -1" />
       </material>
     </visual>
     <collision>
@@ -155,8 +155,8 @@
     <axis
       xyz="0 0 1" />
     <limit
-      effort="100"
-      velocity="100" />
+      effort="10"
+      velocity="20" />
     <dynamics
       damping="0.1"
       friction="0.1" />
@@ -216,8 +216,8 @@
     <limit
       lower="0"
       upper="6.2832"
-      effort="100"
-      velocity="100" />
+      effort="10"
+      velocity="20" />
     <dynamics
       damping="0.1"
       friction="0.1" />
@@ -278,6 +278,9 @@
     <limit
       effort="100"
       velocity="100" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
   </joint>
 
   <ros2_control name="diff_offset_robot_control" type="system">

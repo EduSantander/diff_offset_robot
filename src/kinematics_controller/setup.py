@@ -24,7 +24,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'kinematics_node = kinematics_controller.kinematics_node:main'
+            'kinematics_node = kinematics_controller.kinematics_node:main',
+            'teleop_node = kinematics_controller.custom_teleop:main',
         ],
     },
 )
