@@ -1,0 +1,22 @@
+[1.159s] Invoking command in '/home/edu/diff_offset_robot/src/kinematics_controller': PYTHONPATH=/home/edu/diff_offset_robot/build/kinematics_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/kinematics_controller build --build-base /home/edu/diff_offset_robot/build/kinematics_controller/build install --record /home/edu/diff_offset_robot/build/kinematics_controller/install.log --single-version-externally-managed install_data
+[1.380s] running egg_info
+[1.381s] writing ../../build/kinematics_controller/kinematics_controller.egg-info/PKG-INFO
+[1.381s] writing dependency_links to ../../build/kinematics_controller/kinematics_controller.egg-info/dependency_links.txt
+[1.381s] writing entry points to ../../build/kinematics_controller/kinematics_controller.egg-info/entry_points.txt
+[1.381s] writing requirements to ../../build/kinematics_controller/kinematics_controller.egg-info/requires.txt
+[1.381s] writing top-level names to ../../build/kinematics_controller/kinematics_controller.egg-info/top_level.txt
+[1.383s] reading manifest file '../../build/kinematics_controller/kinematics_controller.egg-info/SOURCES.txt'
+[1.384s] writing manifest file '../../build/kinematics_controller/kinematics_controller.egg-info/SOURCES.txt'
+[1.384s] running build
+[1.384s] running build_py
+[1.384s] running install
+[1.384s] running install_lib
+[1.386s] running install_data
+[1.386s] running install_egg_info
+[1.388s] removing '/home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller-0.0.0-py3.10.egg-info' (and everything under it)
+[1.388s] Copying ../../build/kinematics_controller/kinematics_controller.egg-info to /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller-0.0.0-py3.10.egg-info
+[1.389s] running install_scripts
+[1.407s] Installing kinematics_node script to /home/edu/diff_offset_robot/install/kinematics_controller/lib/kinematics_controller
+[1.407s] Installing teleop_node script to /home/edu/diff_offset_robot/install/kinematics_controller/lib/kinematics_controller
+[1.408s] writing list of installed files to '/home/edu/diff_offset_robot/build/kinematics_controller/install.log'
+[1.433s] Invoked command in '/home/edu/diff_offset_robot/src/kinematics_controller' returned '0': PYTHONPATH=/home/edu/diff_offset_robot/build/kinematics_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/kinematics_controller build --build-base /home/edu/diff_offset_robot/build/kinematics_controller/build install --record /home/edu/diff_offset_robot/build/kinematics_controller/install.log --single-version-externally-managed install_data

@@ -1,7 +1,9 @@
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/__init__.py
+/home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/data_logger.py
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/kinematics_node.py
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/custom_teleop.py
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/__pycache__/__init__.cpython-310.pyc
+/home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/__pycache__/data_logger.cpython-310.pyc
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/__pycache__/kinematics_node.cpython-310.pyc
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/__pycache__/custom_teleop.cpython-310.pyc
 /home/edu/diff_offset_robot/install/kinematics_controller/share/ament_index/resource_index/packages/kinematics_controller

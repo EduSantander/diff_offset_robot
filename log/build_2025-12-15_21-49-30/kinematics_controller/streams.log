@@ -1,0 +1,25 @@
+[0.645s] Invoking command in '/home/edu/diff_offset_robot/build/kinematics_controller': PYTHONPATH=/home/edu/diff_offset_robot/build/kinematics_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/edu/diff_offset_robot/build/kinematics_controller/build --no-deps symlink_data
+[0.842s] running develop
+[0.964s] running egg_info
+[0.964s] creating kinematics_controller.egg-info
+[0.964s] writing kinematics_controller.egg-info/PKG-INFO
+[0.964s] writing dependency_links to kinematics_controller.egg-info/dependency_links.txt
+[0.964s] writing entry points to kinematics_controller.egg-info/entry_points.txt
+[0.964s] writing requirements to kinematics_controller.egg-info/requires.txt
+[0.964s] writing top-level names to kinematics_controller.egg-info/top_level.txt
+[0.964s] writing manifest file 'kinematics_controller.egg-info/SOURCES.txt'
+[0.965s] reading manifest file 'kinematics_controller.egg-info/SOURCES.txt'
+[0.966s] writing manifest file 'kinematics_controller.egg-info/SOURCES.txt'
+[0.967s] running build_ext
+[0.967s] Creating /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics-controller.egg-link (link to .)
+[0.968s] Installing kinematics_node script to /home/edu/diff_offset_robot/install/kinematics_controller/lib/kinematics_controller
+[0.968s] Installing teleop_node script to /home/edu/diff_offset_robot/install/kinematics_controller/lib/kinematics_controller
+[0.968s] 
+[0.968s] Installed /home/edu/diff_offset_robot/build/kinematics_controller
+[0.968s] running symlink_data
+[0.969s] creating /home/edu/diff_offset_robot/install/kinematics_controller/share/ament_index
+[0.969s] creating /home/edu/diff_offset_robot/install/kinematics_controller/share/ament_index/resource_index
+[0.969s] creating /home/edu/diff_offset_robot/install/kinematics_controller/share/ament_index/resource_index/packages
+[0.969s] symbolically linking /home/edu/diff_offset_robot/build/kinematics_controller/resource/kinematics_controller -> /home/edu/diff_offset_robot/install/kinematics_controller/share/ament_index/resource_index/packages
+[0.969s] symbolically linking /home/edu/diff_offset_robot/build/kinematics_controller/package.xml -> /home/edu/diff_offset_robot/install/kinematics_controller/share/kinematics_controller
+[1.005s] Invoked command in '/home/edu/diff_offset_robot/build/kinematics_controller' returned '0': PYTHONPATH=/home/edu/diff_offset_robot/build/kinematics_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/edu/diff_offset_robot/build/kinematics_controller/build --no-deps symlink_data

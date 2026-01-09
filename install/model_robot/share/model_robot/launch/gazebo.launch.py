@@ -12,12 +12,14 @@ def generate_launch_description():
     pkg_share = get_package_share_directory('model_robot')
     use_sim_time = LaunchConfiguration('use_sim_time')
 
-    # 1. Definir la ruta del archivo (AHORA CON LA EXTENSIÓN NUEVA)
-    # Antes: 'diff_offset_robot.urdf'
-    # Ahora:
+    # 1. Definir la ruta del URDF/XACRO
     xacro_file = os.path.join(pkg_share, 'urdf', 'diff_offset_robot.urdf.xacro')
 
-    # 2. PROCESAR (Esto sigue igual, xacro se come lo que le eches)
+    # 2. Definir la ruta del archivo de configuración de RViz (AGREGADO)
+    # Asegúrate de que este archivo exista en tu carpeta 'install/share/model_robot/rviz/'
+    rviz_config_file = os.path.join(pkg_share, 'config', 'robot_config.rviz')
+
+    # 3. PROCESAR XACRO
     doc = xacro.process_file(xacro_file)
     robot_desc = doc.toxml()
 
@@ -103,6 +105,8 @@ def generate_launch_description():
     rviz2 = Node(
         package='rviz2',
         executable='rviz2',
+        name='rviz2',
+        arguments=['-d', rviz_config_file], # <--- Aquí cargamos el archivo .rviz
         parameters=[{'use_sim_time': use_sim_time}],
         output='log'
     )

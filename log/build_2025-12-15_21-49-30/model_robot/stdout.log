@@ -1,0 +1,36 @@
+running develop
+running egg_info
+creating model_robot.egg-info
+writing model_robot.egg-info/PKG-INFO
+writing dependency_links to model_robot.egg-info/dependency_links.txt
+writing entry points to model_robot.egg-info/entry_points.txt
+writing requirements to model_robot.egg-info/requires.txt
+writing top-level names to model_robot.egg-info/top_level.txt
+writing manifest file 'model_robot.egg-info/SOURCES.txt'
+reading manifest file 'model_robot.egg-info/SOURCES.txt'
+writing manifest file 'model_robot.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/edu/diff_offset_robot/install/model_robot/lib/python3.10/site-packages/model-robot.egg-link (link to .)
+
+Installed /home/edu/diff_offset_robot/build/model_robot
+running symlink_data
+creating /home/edu/diff_offset_robot/install/model_robot/share/ament_index
+creating /home/edu/diff_offset_robot/install/model_robot/share/ament_index/resource_index
+creating /home/edu/diff_offset_robot/install/model_robot/share/ament_index/resource_index/packages
+symbolically linking /home/edu/diff_offset_robot/build/model_robot/resource/model_robot -> /home/edu/diff_offset_robot/install/model_robot/share/ament_index/resource_index/packages
+symbolically linking /home/edu/diff_offset_robot/build/model_robot/package.xml -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot
+creating /home/edu/diff_offset_robot/install/model_robot/share/model_robot/urdf
+symbolically linking /home/edu/diff_offset_robot/build/model_robot/urdf/diff_offset_robot.urdf.xacro -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/urdf
+creating /home/edu/diff_offset_robot/install/model_robot/share/model_robot/launch
+symbolically linking /home/edu/diff_offset_robot/build/model_robot/launch/gazebo.launch.py -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/launch
+symbolically linking /home/edu/diff_offset_robot/build/model_robot/launch/display.launch.py -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/launch
+creating /home/edu/diff_offset_robot/install/model_robot/share/model_robot/meshes
+symbolically linking /home/edu/diff_offset_robot/build/model_robot/meshes/body_wheel_link.STL -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/meshes
+symbolically linking /home/edu/diff_offset_robot/build/model_robot/meshes/lidar_link.STL -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/meshes
+symbolically linking /home/edu/diff_offset_robot/build/model_robot/meshes/base_link.STL -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/meshes
+symbolically linking /home/edu/diff_offset_robot/build/model_robot/meshes/top_base_link.STL -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/meshes
+symbolically linking /home/edu/diff_offset_robot/build/model_robot/meshes/left_wheel_link.STL -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/meshes
+symbolically linking /home/edu/diff_offset_robot/build/model_robot/meshes/caster_wheel_link.STL -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/meshes
+symbolically linking /home/edu/diff_offset_robot/build/model_robot/meshes/right_wheel_link.STL -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/meshes
+creating /home/edu/diff_offset_robot/install/model_robot/share/model_robot/config
+symbolically linking /home/edu/diff_offset_robot/build/model_robot/config/ros2_controller.yaml -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/config

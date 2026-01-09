@@ -13,6 +13,8 @@ config/ros2_controller.yaml
 launch/display.launch.py
 launch/gazebo.launch.py
 meshes/base_link.STL
+meshes/body_wheel_link.STL
+meshes/caster_wheel_link.STL
 meshes/left_wheel_link.STL
 meshes/lidar_link.STL
 meshes/right_wheel_link.STL

@@ -1,0 +1,40 @@
+running develop
+Removing /home/edu/diff_offset_robot/install/model_robot/lib/python3.10/site-packages/model-robot.egg-link (link to .)
+running egg_info
+writing ../../build/model_robot/model_robot.egg-info/PKG-INFO
+writing dependency_links to ../../build/model_robot/model_robot.egg-info/dependency_links.txt
+writing entry points to ../../build/model_robot/model_robot.egg-info/entry_points.txt
+writing requirements to ../../build/model_robot/model_robot.egg-info/requires.txt
+writing top-level names to ../../build/model_robot/model_robot.egg-info/top_level.txt
+reading manifest file '../../build/model_robot/model_robot.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/model_robot/model_robot.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/edu/diff_offset_robot/build/model_robot/build
+creating /home/edu/diff_offset_robot/build/model_robot/build/lib
+creating /home/edu/diff_offset_robot/build/model_robot/build/lib/model_robot
+copying model_robot/__init__.py -> /home/edu/diff_offset_robot/build/model_robot/build/lib/model_robot
+running install
+running install_lib
+creating /home/edu/diff_offset_robot/install/model_robot/lib/python3.10/site-packages/model_robot
+copying /home/edu/diff_offset_robot/build/model_robot/build/lib/model_robot/__init__.py -> /home/edu/diff_offset_robot/install/model_robot/lib/python3.10/site-packages/model_robot
+byte-compiling /home/edu/diff_offset_robot/install/model_robot/lib/python3.10/site-packages/model_robot/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying resource/model_robot -> /home/edu/diff_offset_robot/install/model_robot/share/ament_index/resource_index/packages
+copying package.xml -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot
+copying urdf/diff_offset_robot.urdf.xacro -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/urdf
+copying launch/gazebo.launch.py -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/launch
+copying launch/display.launch.py -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/launch
+copying meshes/body_wheel_link.STL -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/meshes
+copying meshes/lidar_link.STL -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/meshes
+copying meshes/base_link.STL -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/meshes
+copying meshes/top_base_link.STL -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/meshes
+copying meshes/left_wheel_link.STL -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/meshes
+copying meshes/caster_wheel_link.STL -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/meshes
+copying meshes/right_wheel_link.STL -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/meshes
+copying config/ros2_controller.yaml -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/config
+running install_egg_info
+Copying ../../build/model_robot/model_robot.egg-info to /home/edu/diff_offset_robot/install/model_robot/lib/python3.10/site-packages/model_robot-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/edu/diff_offset_robot/build/model_robot/install.log'

@@ -10,6 +10,7 @@ setup.py
 ../../build/kinematics_controller/kinematics_controller.egg-info/zip-safe
 kinematics_controller/__init__.py
 kinematics_controller/custom_teleop.py
+kinematics_controller/data_logger.py
 kinematics_controller/kinematics_node.py
 resource/kinematics_controller
 test/test_copyright.py
