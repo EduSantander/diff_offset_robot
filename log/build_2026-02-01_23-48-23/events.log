@@ -1,0 +1,78 @@
+[0.000000] (-) TimerEvent: {}
+[0.000472] (kinematics_controller) JobQueued: {'identifier': 'kinematics_controller', 'dependencies': OrderedDict()}
+[0.000572] (model_robot) JobQueued: {'identifier': 'model_robot', 'dependencies': OrderedDict()}
+[0.000651] (kinematics_controller) JobStarted: {'identifier': 'kinematics_controller'}
+[0.020311] (model_robot) JobStarted: {'identifier': 'model_robot'}
+[0.096858] (-) TimerEvent: {}
+[0.197512] (-) TimerEvent: {}
+[0.298061] (-) TimerEvent: {}
+[0.398531] (-) TimerEvent: {}
+[0.499005] (-) TimerEvent: {}
+[0.599620] (-) TimerEvent: {}
+[0.700171] (-) TimerEvent: {}
+[0.800640] (-) TimerEvent: {}
+[0.901164] (-) TimerEvent: {}
+[1.001619] (-) TimerEvent: {}
+[1.102175] (-) TimerEvent: {}
+[1.202650] (-) TimerEvent: {}
+[1.303717] (-) TimerEvent: {}
+[1.404240] (-) TimerEvent: {}
+[1.504687] (-) TimerEvent: {}
+[1.605156] (-) TimerEvent: {}
+[1.705590] (-) TimerEvent: {}
+[1.806092] (-) TimerEvent: {}
+[1.906593] (-) TimerEvent: {}
+[2.007062] (-) TimerEvent: {}
+[2.084631] (kinematics_controller) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/kinematics_controller', 'build', '--build-base', '/home/edu/diff_offset_robot/build/kinematics_controller/build', 'install', '--record', '/home/edu/diff_offset_robot/build/kinematics_controller/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/edu/diff_offset_robot/src/kinematics_controller', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'edu', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/edu', 'OLDPWD': '/home/edu', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1788', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'edu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'edu', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/edu:@/tmp/.ICE-unix/1760,unix/edu:/tmp/.ICE-unix/1760', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ce4907d9_c8e9_4dd8_9b7c_6dd7736a884b', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.FIF9J3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.181', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/edu/diff_offset_robot/build/kinematics_controller', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/edu/diff_offset_robot/build/kinematics_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[2.096771] (model_robot) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/model_robot', 'build', '--build-base', '/home/edu/diff_offset_robot/build/model_robot/build', 'install', '--record', '/home/edu/diff_offset_robot/build/model_robot/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/edu/diff_offset_robot/src/model_robot', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'edu', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/edu', 'OLDPWD': '/home/edu', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1788', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'edu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'edu', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/edu:@/tmp/.ICE-unix/1760,unix/edu:/tmp/.ICE-unix/1760', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ce4907d9_c8e9_4dd8_9b7c_6dd7736a884b', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.FIF9J3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.181', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/edu/diff_offset_robot/build/model_robot', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/edu/diff_offset_robot/build/model_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/edu/diff_offset_robot/install/model_robot/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[2.107448] (-) TimerEvent: {}
+[2.207909] (-) TimerEvent: {}
+[2.308415] (-) TimerEvent: {}
+[2.408862] (-) TimerEvent: {}
+[2.509348] (-) TimerEvent: {}
+[2.609793] (-) TimerEvent: {}
+[2.629044] (kinematics_controller) StdoutLine: {'line': b'running egg_info\n'}
+[2.630470] (kinematics_controller) StdoutLine: {'line': b'writing ../../build/kinematics_controller/kinematics_controller.egg-info/PKG-INFO\n'}
+[2.631026] (kinematics_controller) StdoutLine: {'line': b'writing dependency_links to ../../build/kinematics_controller/kinematics_controller.egg-info/dependency_links.txt\n'}
+[2.631527] (kinematics_controller) StdoutLine: {'line': b'writing entry points to ../../build/kinematics_controller/kinematics_controller.egg-info/entry_points.txt\n'}
+[2.631898] (kinematics_controller) StdoutLine: {'line': b'writing requirements to ../../build/kinematics_controller/kinematics_controller.egg-info/requires.txt\n'}
+[2.632254] (kinematics_controller) StdoutLine: {'line': b'writing top-level names to ../../build/kinematics_controller/kinematics_controller.egg-info/top_level.txt\n'}
+[2.635660] (kinematics_controller) StdoutLine: {'line': b"reading manifest file '../../build/kinematics_controller/kinematics_controller.egg-info/SOURCES.txt'\n"}
+[2.637023] (model_robot) StdoutLine: {'line': b'running egg_info\n'}
+[2.637840] (kinematics_controller) StdoutLine: {'line': b"writing manifest file '../../build/kinematics_controller/kinematics_controller.egg-info/SOURCES.txt'\n"}
+[2.638378] (kinematics_controller) StdoutLine: {'line': b'running build\n'}
+[2.638670] (kinematics_controller) StdoutLine: {'line': b'running build_py\n'}
+[2.638992] (model_robot) StdoutLine: {'line': b'writing ../../build/model_robot/model_robot.egg-info/PKG-INFO\n'}
+[2.639351] (model_robot) StdoutLine: {'line': b'writing dependency_links to ../../build/model_robot/model_robot.egg-info/dependency_links.txt\n'}
+[2.639646] (model_robot) StdoutLine: {'line': b'writing entry points to ../../build/model_robot/model_robot.egg-info/entry_points.txt\n'}
+[2.640129] (model_robot) StdoutLine: {'line': b'writing requirements to ../../build/model_robot/model_robot.egg-info/requires.txt\n'}
+[2.640635] (model_robot) StdoutLine: {'line': b'writing top-level names to ../../build/model_robot/model_robot.egg-info/top_level.txt\n'}
+[2.641636] (kinematics_controller) StdoutLine: {'line': b'running install\n'}
+[2.642324] (kinematics_controller) StdoutLine: {'line': b'running install_lib\n'}
+[2.644495] (model_robot) StdoutLine: {'line': b"reading manifest file '../../build/model_robot/model_robot.egg-info/SOURCES.txt'\n"}
+[2.645072] (kinematics_controller) StdoutLine: {'line': b'running install_data\n'}
+[2.645498] (model_robot) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[2.645703] (kinematics_controller) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.646768] (model_robot) StdoutLine: {'line': b"writing manifest file '../../build/model_robot/model_robot.egg-info/SOURCES.txt'\n"}
+[2.647402] (model_robot) StdoutLine: {'line': b'running build\n'}
+[2.647612] (model_robot) StdoutLine: {'line': b'running build_py\n'}
+[2.647882] (model_robot) StdoutLine: {'line': b'running install\n'}
+[2.649252] (kinematics_controller) StdoutLine: {'line': b"removing '/home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[2.650275] (kinematics_controller) StdoutLine: {'line': b'Copying ../../build/kinematics_controller/kinematics_controller.egg-info to /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller-0.0.0-py3.10.egg-info\n'}
+[2.650563] (model_robot) StdoutLine: {'line': b'running install_lib\n'}
+[2.652474] (kinematics_controller) StdoutLine: {'line': b'running install_scripts\n'}
+[2.652829] (model_robot) StdoutLine: {'line': b'running install_data\n'}
+[2.653536] (model_robot) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.657275] (model_robot) StdoutLine: {'line': b"removing '/home/edu/diff_offset_robot/install/model_robot/lib/python3.10/site-packages/model_robot-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[2.658178] (model_robot) StdoutLine: {'line': b'Copying ../../build/model_robot/model_robot.egg-info to /home/edu/diff_offset_robot/install/model_robot/lib/python3.10/site-packages/model_robot-0.0.0-py3.10.egg-info\n'}
+[2.660544] (model_robot) StdoutLine: {'line': b'running install_scripts\n'}
+[2.694831] (kinematics_controller) StdoutLine: {'line': b'Installing kinematics_node script to /home/edu/diff_offset_robot/install/kinematics_controller/lib/kinematics_controller\n'}
+[2.695251] (kinematics_controller) StdoutLine: {'line': b'Installing teleop_node script to /home/edu/diff_offset_robot/install/kinematics_controller/lib/kinematics_controller\n'}
+[2.696061] (kinematics_controller) StdoutLine: {'line': b"writing list of installed files to '/home/edu/diff_offset_robot/build/kinematics_controller/install.log'\n"}
+[2.702466] (model_robot) StdoutLine: {'line': b"writing list of installed files to '/home/edu/diff_offset_robot/build/model_robot/install.log'\n"}
+[2.709991] (-) TimerEvent: {}
+[2.743452] (kinematics_controller) CommandEnded: {'returncode': 0}
+[2.767151] (kinematics_controller) JobEnded: {'identifier': 'kinematics_controller', 'rc': 0}
+[2.770357] (model_robot) CommandEnded: {'returncode': 0}
+[2.784996] (model_robot) JobEnded: {'identifier': 'model_robot', 'rc': 0}
+[2.786950] (-) EventReactorShutdown: {}
