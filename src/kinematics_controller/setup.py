@@ -26,7 +26,8 @@ setup(
         'console_scripts': [
             'kinematics_node = kinematics_controller.kinematics_node:main',
             'teleop_node = kinematics_controller.custom_teleop:main',
-            'vy_logger = kinematics_ controller.vy_logger:main'
+            'vy_logger = kinematics_controller.vy_logger:main',
+            'manual_logger = kinematics_controller.manual_trajectory_logger:main'
         ],
     },
 )
