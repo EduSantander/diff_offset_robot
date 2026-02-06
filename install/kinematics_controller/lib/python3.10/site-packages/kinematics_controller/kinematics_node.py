@@ -239,7 +239,7 @@ class DiffOffsetKinematics(Node):
         self.publish_commands(alphaL_dot, alphaR_dot, phi_dot)
         
         # 4. Publicar Joint States
-        self.publish_joint_states(alphaL_dot, alphaR_dot, phi_dot, omega_c)
+        #self.publish_joint_states(alphaL_dot, alphaR_dot, phi_dot, omega_c)
         
         # 5. Publicar Odometría
         self.publish_odometry(omega_c)
