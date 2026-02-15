@@ -3,12 +3,14 @@
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/data_logger.py
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/kinematics_node.py
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/custom_teleop.py
+/home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/platform_validation_logger.py
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/manual_trajectory_logger.py
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/__pycache__/vxy_logger.cpython-310.pyc
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/__pycache__/__init__.cpython-310.pyc
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/__pycache__/data_logger.cpython-310.pyc
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/__pycache__/kinematics_node.cpython-310.pyc
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/__pycache__/custom_teleop.cpython-310.pyc
+/home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/__pycache__/platform_validation_logger.cpython-310.pyc
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/__pycache__/manual_trajectory_logger.cpython-310.pyc
 /home/edu/diff_offset_robot/install/kinematics_controller/share/ament_index/resource_index/packages/kinematics_controller
 /home/edu/diff_offset_robot/install/kinematics_controller/share/kinematics_controller/package.xml
@@ -21,5 +23,6 @@
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller-0.0.0-py3.10.egg-info/top_level.txt
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/kinematics_controller/kinematics_node
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/kinematics_controller/manual_logger
+/home/edu/diff_offset_robot/install/kinematics_controller/lib/kinematics_controller/platform_logger
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/kinematics_controller/teleop_node
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/kinematics_controller/vxy_logger
