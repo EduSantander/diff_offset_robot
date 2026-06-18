@@ -1,4 +1,3 @@
-/home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/turret_continuous_logger.py
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/vxy_logger.py
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/wheel_sysid_logger.py
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/__init__.py
@@ -7,7 +6,6 @@
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/custom_teleop.py
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/platform_validation_logger.py
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/manual_trajectory_logger.py
-/home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/__pycache__/turret_continuous_logger.cpython-310.pyc
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/__pycache__/vxy_logger.cpython-310.pyc
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/__pycache__/wheel_sysid_logger.cpython-310.pyc
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/__pycache__/__init__.cpython-310.pyc
@@ -29,6 +27,5 @@
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/kinematics_controller/manual_logger
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/kinematics_controller/platform_logger
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/kinematics_controller/teleop_node
-/home/edu/diff_offset_robot/install/kinematics_controller/lib/kinematics_controller/turret_logger
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/kinematics_controller/vxy_logger
 /home/edu/diff_offset_robot/install/kinematics_controller/lib/kinematics_controller/wheel_logger

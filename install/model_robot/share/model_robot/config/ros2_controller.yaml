@@ -22,7 +22,7 @@ platform_controller:
   ros__parameters:
     joints:
       - top_base_joint
-    interface_name: effort #velocity
+    interface_name: velocity
 
 gazebo_ros2_control:
   ros__parameters:

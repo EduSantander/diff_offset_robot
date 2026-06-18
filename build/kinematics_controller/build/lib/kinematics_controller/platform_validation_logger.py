@@ -13,7 +13,7 @@ class PlatformValidationLogger(Node):
         super().__init__('platform_validation_logger')
         
         # -----------------------
-        # CONFIGURACIÓN (¡Revisa el nombre de tu joint!)
+        # CONFIGURACIÓN
         # -----------------------
         # Nombre del joint que mueve la torreta/plataforma en tu URDF
         self.platform_joint_name = 'top_base_joint' 
