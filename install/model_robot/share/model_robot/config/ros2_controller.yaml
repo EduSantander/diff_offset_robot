@@ -22,4 +22,16 @@ platform_controller:
   ros__parameters:
     joints:
       - top_base_joint
-    interface_name: velocity
+    interface_name: effort #velocity
+
+gazebo_ros2_control:
+  ros__parameters:
+    pid_gains:
+      left_wheel_joint:
+        p: 0.27505
+        i: 0.74165
+        d: 0.0
+      right_wheel_joint:
+        p: 0.27505
+        i: 0.74165
+        d: 0.0

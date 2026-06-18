@@ -28,7 +28,8 @@ setup(
             'teleop_node = kinematics_controller.custom_teleop:main',
             'vxy_logger = kinematics_controller.vxy_logger:main',
             'manual_logger = kinematics_controller.manual_trajectory_logger:main',
-            'platform_logger = kinematics_controller.platform_validation_logger:main'
+            'platform_logger = kinematics_controller.platform_validation_logger:main',
+            'wheel_logger = kinematics_controller.wheel_sysid_logger:main'
         ],
     },
 )
