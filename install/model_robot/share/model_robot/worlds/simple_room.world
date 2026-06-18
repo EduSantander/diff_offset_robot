@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="slam_test_world">
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <model name="paredes">
+      <static>true</static>
+      <link name="link">
+        <collision name="c1"><pose>0 5 1 0 0 0</pose><geometry><box><size>10 0.2 2</size></box></geometry></collision>
+        <visual name="v1"><pose>0 5 1 0 0 0</pose><geometry><box><size>10 0.2 2</size></box></geometry></visual>
+        
+        <collision name="c2"><pose>0 -5 1 0 0 0</pose><geometry><box><size>10 0.2 2</size></box></geometry></collision>
+        <visual name="v2"><pose>0 -5 1 0 0 0</pose><geometry><box><size>10 0.2 2</size></box></geometry></visual>
+        
+        <collision name="c3"><pose>5 0 1 0 0 0</pose><geometry><box><size>0.2 10 2</size></box></geometry></collision>
+        <visual name="v3"><pose>5 0 1 0 0 0</pose><geometry><box><size>0.2 10 2</size></box></geometry></visual>
+        
+        <collision name="c4"><pose>-5 0 1 0 0 0</pose><geometry><box><size>0.2 10 2</size></box></geometry></collision>
+        <visual name="v4"><pose>-5 0 1 0 0 0</pose><geometry><box><size>0.2 10 2</size></box></geometry></visual>
+      </link>
+    </model>
+
+    <model name="columna1">
+      <static>true</static><pose>2 2 1 0 0 0</pose>
+      <link name="link">
+        <collision name="c"><geometry><cylinder><radius>0.5</radius><length>2</length></cylinder></geometry></collision>
+        <visual name="v"><geometry><cylinder><radius>0.5</radius><length>2</length></cylinder></geometry></visual>
+      </link>
+    </model>
+    
+    <model name="columna2">
+      <static>true</static><pose>-2 -3 1 0 0 0</pose>
+      <link name="link">
+        <collision name="c"><geometry><cylinder><radius>0.5</radius><length>2</length></cylinder></geometry></collision>
+        <visual name="v"><geometry><cylinder><radius>0.5</radius><length>2</length></cylinder></geometry></visual>
+      </link>
+    </model>
+  </world>
+</sdf>

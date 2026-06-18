@@ -12,6 +12,8 @@ def generate_launch_description():
     pkg_share = get_package_share_directory('model_robot')
     use_sim_time = LaunchConfiguration('use_sim_time')
 
+    world_file = os.path.join(pkg_share, 'worlds', 'simple_room.world')
+
     # 1. Definir la ruta del URDF/XACRO
     xacro_file = os.path.join(pkg_share, 'urdf', 'diff_offset_robot.urdf.xacro')
 
@@ -25,7 +27,7 @@ def generate_launch_description():
 
     # Gazebo
     gazebo = ExecuteProcess(
-        cmd=['gazebo', '--verbose',
+        cmd=['gazebo', '--verbose', world_file,
              '-s', 'libgazebo_ros_init.so',
              '-s', 'libgazebo_ros_factory.so'],
         output='screen'

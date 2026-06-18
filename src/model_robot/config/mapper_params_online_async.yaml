@@ -1,0 +1,25 @@
+slam_toolbox:
+  ros__parameters:
+    # Ajustes de Tiempo y Sincronización
+    use_sim_time: true
+    transform_timeout: 1.0
+
+    # Nombres de los Frames Matemáticos
+    base_frame: base_link
+    odom_frame: odom
+    map_frame: map
+    scan_topic: /scan
+
+    # Modo de Operación y Reglas del Mapa
+    mode: mapping
+    resolution: 0.05
+    max_laser_range: 12.0
+
+    # Umbrales de Actualización
+    minimum_time_interval: 0.5
+    minimum_travel_distance: 0.2
+    minimum_travel_heading: 0.2
+
+    # Confianza del Escaneo (Ajustado para Odometría Fiel)
+    odom_match_minimum_response_fine: 0.1
+    link_match_minimum_response_fine: 0.1
