@@ -41,12 +41,20 @@ class DiffOffsetKinematics(Node):
         self.theta_c = 0.0
         self.theta_p = 0.0
 
+        # Variables para capturar el joystick (Local)
+        self.vx_local = 0.0
+        self.vy_local = 0.0
+
+        # Variables para la odometría real (Local)
+        self.vx_real_local = 0.0
+        self.vy_real_local = 0.0
+
         self.alpha_L = 0.0
         self.alpha_R = 0.0
 
         # INPUTS DESEADOS
-        self.vx_des = 0.0
-        self.vy_des = 0.0
+        #self.vx_des = 0.0
+        #self.vy_des = 0.0
         self.theta_p_dot_cmd = 0.0
 
         # -----------------------
@@ -80,8 +88,10 @@ class DiffOffsetKinematics(Node):
     #                   CALLBACKS ROS
     # ----------------------------------------------------------
     def cmdvel_cb(self, msg):
-        self.vx_des = msg.linear.x
-        self.vy_des = msg.linear.y
+        #self.vx_des = msg.linear.x
+        #self.vy_des = msg.linear.y
+        self.vx_local = msg.linear.x
+        self.vy_local = msg.linear.y
         self.theta_p_dot_cmd = msg.angular.z
 
     # ----------------------------------------------------------
@@ -94,6 +104,10 @@ class DiffOffsetKinematics(Node):
         donde φ̇ es la velocidad relativa del motor de la torreta.
         """
         th = self.theta_c
+
+        # --- LO NUEVO: Proyección Trigonométrica (Local -> Global) ---
+        self.vx_des = (self.vx_local * math.cos(th)) - (self.vy_local * math.sin(th))
+        self.vy_des = (self.vx_local * math.sin(th)) + (self.vy_local * math.cos(th))
 
         R = self.R
         d1 = self.d1
@@ -145,6 +159,10 @@ class DiffOffsetKinematics(Node):
         self.x += self.vx_des * dt
         self.y += self.vy_des * dt
 
+        # --- LO NUEVO: Cinemática Directa de las velocidades Locales (Punto M) ---
+        self.vx_real_local = (self.R / 2.0) * (alphaR_dot + alphaL_dot)
+        self.vy_real_local = self.d1 * omega_c  # ¡El arrastre lateral del offset!
+
         return omega_c, theta_p_dot_real
 
     # ----------------------------------------------------------
@@ -194,8 +212,10 @@ class DiffOffsetKinematics(Node):
         od.pose.pose.position.y = self.y
         od.pose.pose.orientation = q
 
-        od.twist.twist.linear.x = self.vx_des
-        od.twist.twist.linear.y = self.vy_des
+        #od.twist.twist.linear.x = self.vx_des
+        #od.twist.twist.linear.y = self.vy_des
+        od.twist.twist.linear.x = self.vx_real_local
+        od.twist.twist.linear.y = self.vy_real_local
         od.twist.twist.angular.z = omega_c
 
         self.pub_odom.publish(od)
