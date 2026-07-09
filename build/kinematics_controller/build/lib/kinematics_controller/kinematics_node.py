@@ -37,6 +37,18 @@ class DiffOffsetKinematics(Node):
         self.base_frame_id = self.declare_parameter('base_frame_id', 'base_link').value
         self.update_rate = self.declare_parameter('update_rate', 100.0).value  # Hz
 
+        # IMPORTANTE: en Gazebo con ros2_control + joint_state_broadcaster,
+        # /joint_states YA lo publica el broadcaster con los valores REALES
+        # simulados de left_wheel_joint, right_wheel_joint y top_base_joint.
+        # Si este nodo tambien publica esos mismos joints (con el modelo
+        # cinematico, no la fisica real), quedan DOS publishers en el mismo
+        # topico con los mismos nombres -> robot_state_publisher recibe
+        # valores en conflicto sin ninguna fusion, causando temblores/saltos
+        # en el TF. Por eso el default es False en simulacion.
+        # Ponlo en True solo si corres en hardware real sin encoders/broadcaster.
+        self.publish_model_joint_states = self.declare_parameter(
+            'publish_model_joint_states', False).value
+
         # -----------------------
         # INTERNAL STATE
         # -----------------------
@@ -280,9 +292,10 @@ class DiffOffsetKinematics(Node):
         # 3. Publicar Comandos
         self.publish_commands(alphaL_dot, alphaR_dot, phi_dot)
 
-        # 4. Publicar Joint States (reactivado: necesario para que
-        #    robot_state_publisher arme el resto del arbol TF a partir del URDF)
-        self.publish_joint_states(alphaL_dot, alphaR_dot, phi_dot, omega_c)
+        # 4. Publicar Joint States (SOLO si no hay joint_state_broadcaster
+        #    real publicando estos mismos joints -> ver comentario en __init__)
+        if self.publish_model_joint_states:
+            self.publish_joint_states(alphaL_dot, alphaR_dot, phi_dot, omega_c)
 
         # 5. Publicar Odometria
         self.publish_odometry(omega_c)

@@ -200,9 +200,15 @@
       </geometry>
     </collision>
   </link>
+  <!-- CORREGIDO: era "continuous" sin actuador -> riesgo de que el lidar
+       gire libremente en la simulacion y rompa la transformada rigida
+       base_link -> lidar_link que SLAM necesita. El escaneo de 360 grados
+       ya lo simula el sensor (ver <horizontal><samples>360</samples>),
+       no se necesita rotacion fisica. Un joint "fixed" no admite
+       <axis>, <limit> ni <dynamics>. -->
   <joint
     name="lidar_joint"
-    type="continuous">
+    type="fixed">
     <origin
       xyz="0.18 0 0.03"
       rpy="0 0 0" />
@@ -210,14 +216,6 @@
       link="base_link" />
     <child
       link="lidar_link" />
-    <axis
-      xyz="0 0 1" />
-    <limit
-      effort="10"
-      velocity="20" />
-    <dynamics
-      damping="0.1"
-      friction="0.1" />
   </joint>
   <link
     name="top_base_link">
@@ -264,30 +262,9 @@
     <parent link="base_link" />
     <child link="top_base_link" />
     <axis xyz="0 0 1" />
-    <limit effort="1000.0" velocity="20.0" /> 
+    <limit effort="1000.0" velocity="20.0" />
     <dynamics damping="0.1" friction="0.1" />
   </joint>
-  <!-- <joint
-    name="top_base_joint"
-    type="revolute">
-    <origin
-      xyz="0 0 0.03"
-      rpy="0 0 0" />
-    <parent
-      link="base_link" />
-    <child
-      link="top_base_link" />
-    <axis
-      xyz="0 0 1" />
-    <limit
-      lower="0"
-      upper="6.28"
-      effort="10"
-      velocity="20" />
-    <dynamics
-      damping="0.1"
-      friction="0.1" />
-  </joint> -->
   <link
     name="body_wheel_link">
     <inertial>
@@ -435,7 +412,6 @@
   <gazebo>
     <plugin name="gazebo_lidar_joint_state" filename="libgazebo_ros_joint_state_publisher.so">
       <update_rate>100</update_rate>
-      <joint_name>lidar_joint</joint_name>
       <joint_name>body_wheel_joint</joint_name>
       <joint_name>caster_wheel_joint</joint_name>
     </plugin>
@@ -463,11 +439,11 @@
   <gazebo reference="lidar_link">
     <sensor type="ray" name="mi_lidar_sensor">
       <pose>0 0 0 0 0 0</pose>
-      
-      <visualize>true</visualize> 
-      
+
+      <visualize>true</visualize>
+
       <update_rate>10.0</update_rate>
-      
+
       <ray>
         <scan>
           <horizontal>
@@ -478,7 +454,7 @@
           </horizontal>
         </scan>
         <range>
-          <min>0.15</min> 
+          <min>0.40</min>
           <max>12.0</max>
           <resolution>0.01</resolution>
         </range>
@@ -494,9 +470,9 @@
           <remapping>~/out:=scan</remapping>
         </ros>
         <output_type>sensor_msgs/LaserScan</output_type>
-        <frame_name>lidar_link</frame_name> 
+        <frame_name>lidar_link</frame_name>
       </plugin>
     </sensor>
   </gazebo>
-  
+
 </robot>
