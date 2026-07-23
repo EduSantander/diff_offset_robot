@@ -1,0 +1,406 @@
+[INFO] [launch]: All log files can be found below /home/edu/.ros/log/2026-07-22-19-49-58-101955-edu-5057
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gazebo-1]: process started with pid [5059]
+[INFO] [robot_state_publisher-2]: process started with pid [5061]
+[INFO] [spawn_entity.py-3]: process started with pid [5063]
+[INFO] [kinematics_node-4]: process started with pid [5065]
+[INFO] [localization_slam_toolbox_node-5]: process started with pid [5067]
+[INFO] [controller_server-6]: process started with pid [5069]
+[INFO] [planner_server-7]: process started with pid [5071]
+[INFO] [behavior_server-8]: process started with pid [5073]
+[INFO] [bt_navigator-9]: process started with pid [5075]
+[INFO] [lifecycle_manager-10]: process started with pid [5077]
+[INFO] [rviz2-11]: process started with pid [5079]
+[localization_slam_toolbox_node-5] [INFO] [1784767798.554765883] [slam_toolbox]: Node using stack size 40000000
+[rviz2-11] Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+[behavior_server-8] [INFO] [1784767798.565188839] [behavior_server]: 
+[behavior_server-8] 	behavior_server lifecycle node launched. 
+[behavior_server-8] 	Waiting on external lifecycle transitions to activate
+[behavior_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-9] [INFO] [1784767798.567599300] [bt_navigator]: 
+[bt_navigator-9] 	bt_navigator lifecycle node launched. 
+[bt_navigator-9] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-9] [INFO] [1784767798.567843262] [bt_navigator]: Creating
+[controller_server-6] [INFO] [1784767798.568508511] [controller_server]: 
+[controller_server-6] 	controller_server lifecycle node launched. 
+[controller_server-6] 	Waiting on external lifecycle transitions to activate
+[controller_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-10] [INFO] [1784767798.571581844] [lifecycle_manager_navigation]: Creating
+[planner_server-7] [INFO] [1784767798.573525428] [planner_server]: 
+[planner_server-7] 	planner_server lifecycle node launched. 
+[planner_server-7] 	Waiting on external lifecycle transitions to activate
+[planner_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-7] [INFO] [1784767798.579207943] [planner_server]: Creating
+[lifecycle_manager-10] [INFO] [1784767798.580638571] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[robot_state_publisher-2] [WARN] [1784767798.581028672] [kdl_parser]: The root link base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[robot_state_publisher-2] [INFO] [1784767798.582127515] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-2] [INFO] [1784767798.582314699] [robot_state_publisher]: got segment body_wheel_link
+[robot_state_publisher-2] [INFO] [1784767798.582358261] [robot_state_publisher]: got segment caster_wheel_link
+[robot_state_publisher-2] [INFO] [1784767798.582387908] [robot_state_publisher]: got segment left_wheel_link
+[robot_state_publisher-2] [INFO] [1784767798.582415039] [robot_state_publisher]: got segment lidar_link
+[robot_state_publisher-2] [INFO] [1784767798.582444127] [robot_state_publisher]: got segment right_wheel_link
+[robot_state_publisher-2] [INFO] [1784767798.582473564] [robot_state_publisher]: got segment top_base_link
+[controller_server-6] [INFO] [1784767798.585920077] [controller_server]: Creating controller server
+[lifecycle_manager-10] [INFO] [1784767798.600643866] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-10] [INFO] [1784767798.600778189] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[planner_server-7] [INFO] [1784767798.614021425] [global_costmap.global_costmap]: 
+[planner_server-7] 	global_costmap lifecycle node launched. 
+[planner_server-7] 	Waiting on external lifecycle transitions to activate
+[planner_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-6] [INFO] [1784767798.618268069] [local_costmap.local_costmap]: 
+[controller_server-6] 	local_costmap lifecycle node launched. 
+[controller_server-6] 	Waiting on external lifecycle transitions to activate
+[controller_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-7] [INFO] [1784767798.618807456] [global_costmap.global_costmap]: Creating Costmap
+[controller_server-6] [INFO] [1784767798.619623529] [local_costmap.local_costmap]: Creating Costmap
+[controller_server-6] [INFO] [1784767798.624519339] [controller_server]: Configuring controller interface
+[controller_server-6] [INFO] [1784767798.624813785] [controller_server]: getting goal checker plugins..
+[controller_server-6] [INFO] [1784767798.624993837] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-6] [INFO] [1784767798.625077815] [local_costmap.local_costmap]: Configuring
+[controller_server-6] [INFO] [1784767798.634629738] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[controller_server-6] [INFO] [1784767798.647525457] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-6] [INFO] [1784767798.655351047] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-6] [INFO] [1784767798.655435025] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-6] [INFO] [1784767798.656645954] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[localization_slam_toolbox_node-5] [INFO] [1784767798.673357030] [slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
+[localization_slam_toolbox_node-5] [INFO] [1784767798.674352666] [slam_toolbox]: CeresSolver: Using SCHUR_JACOBI preconditioner.
+[controller_server-6] [INFO] [1784767798.679069542] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-6] [INFO] [1784767798.681049696] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-6] [INFO] [1784767798.681657888] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-6] [INFO] [1784767798.689033662] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-6] [INFO] [1784767798.691214565] [controller_server]: Setting transform_tolerance to 0.200000
+[controller_server-6] [INFO] [1784767798.713110024] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-6] [INFO] [1784767798.714399757] [controller_server]: Critic plugin initialized
+[controller_server-6] [INFO] [1784767798.714743009] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-6] [INFO] [1784767798.715233940] [controller_server]: Critic plugin initialized
+[controller_server-6] [INFO] [1784767798.715542511] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-6] [INFO] [1784767798.716499060] [controller_server]: Critic plugin initialized
+[controller_server-6] [INFO] [1784767798.716763439] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-6] [INFO] [1784767798.717752502] [controller_server]: Critic plugin initialized
+[controller_server-6] [INFO] [1784767798.718036040] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-6] [INFO] [1784767798.718683249] [controller_server]: Critic plugin initialized
+[controller_server-6] [INFO] [1784767798.719001539] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-6] [INFO] [1784767798.719683640] [controller_server]: Critic plugin initialized
+[controller_server-6] [INFO] [1784767798.719749438] [controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-10] [INFO] [1784767798.733376832] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-7] [INFO] [1784767798.733939504] [planner_server]: Configuring
+[planner_server-7] [INFO] [1784767798.734013482] [global_costmap.global_costmap]: Configuring
+[planner_server-7] [INFO] [1784767798.744294494] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-7] [INFO] [1784767798.751312332] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-7] [INFO] [1784767798.753815371] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-7] [INFO] [1784767798.753908509] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-7] [INFO] [1784767798.755042243] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-7] [INFO] [1784767798.761280578] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-7] [INFO] [1784767798.761362108] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-7] [INFO] [1784767798.762765816] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-7] [INFO] [1784767798.795446432] [planner_server]: Created global planner plugin GridBased of type nav2_smac_planner/SmacPlannerHybrid
+[planner_server-7] [INFO] [1784767798.795546352] [planner_server]: Configuring GridBased of type SmacPlannerHybrid
+[planner_server-7] [INFO] [1784767798.799050971] [planner_server]: Even sized heuristic lookup table size set 400.000000, increasing size by 1 to make odd
+[localization_slam_toolbox_node-5] Load From File /home/edu/diff_offset_robot/mi_mapa.posegraph 
+[localization_slam_toolbox_node-5] Mapper <- Module
+[localization_slam_toolbox_node-5] Mapper <- m_pSequentialScanMatcher
+[localization_slam_toolbox_node-5] Mapper <- m_pGraph
+[localization_slam_toolbox_node-5] MapperGraph <- Graph; Graph <- m_Edges; Graph <- m_Vertices
+[localization_slam_toolbox_node-5] MapperGraph <- m_pMapper; MapperGraph <- m_pLoopScanMatcher; MapperGraph <- m_pTraversal
+[localization_slam_toolbox_node-5] Mapper <- m_pMapperSensorManager
+[localization_slam_toolbox_node-5] MapperSensorManager <- m_ScanManagers; MapperSensorManager <- m_Scans
+[localization_slam_toolbox_node-5] Mapper <- m_Listeners
+[localization_slam_toolbox_node-5] **Finished serializing Mapper**
+[localization_slam_toolbox_node-5] Load From File
+[localization_slam_toolbox_node-5] **Serializing Dataset**
+[localization_slam_toolbox_node-5] Dataset <- m_SensorNameLookup
+[localization_slam_toolbox_node-5] Dataset <- m_Data
+[localization_slam_toolbox_node-5] Dataset <- m_Lasers
+[localization_slam_toolbox_node-5] Dataset <- m_pDatasetInfo
+[localization_slam_toolbox_node-5] **Finished serializing Dataset**
+[localization_slam_toolbox_node-5] Registering sensor: [Custom Described Lidar]
+[localization_slam_toolbox_node-5] WARNING: Logging before InitGoogleLogging() is written to STDERR
+[localization_slam_toolbox_node-5] W0722 19:49:58.819133  5067 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 16.  Bounding to maximum number available.
+[planner_server-7] [INFO] [1784767798.854354806] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 158 X 158 at 0.050000 m/pix
+[rviz2-11] [INFO] [1784767799.348658413] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-11] [INFO] [1784767799.348914034] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-11] [INFO] [1784767799.410661726] [rviz2]: Stereo is NOT SUPPORTED
+[gazebo-1] Gazebo multi-robot simulator, version 11.10.2
+[gazebo-1] Copyright (C) 2012 Open Source Robotics Foundation.
+[gazebo-1] Released under the Apache 2 License.
+[gazebo-1] http://gazebosim.org
+[gazebo-1] 
+[spawn_entity.py-3] [INFO] [1784767799.508156852] [spawn_entity]: Spawn Entity started
+[spawn_entity.py-3] [INFO] [1784767799.509336654] [spawn_entity]: Loading entity published on topic robot_description
+[spawn_entity.py-3] [INFO] [1784767799.514533266] [spawn_entity]: Waiting for entity xml on robot_description
+[spawn_entity.py-3] [INFO] [1784767799.527601145] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
+[spawn_entity.py-3] [INFO] [1784767799.528944417] [spawn_entity]: Waiting for service /spawn_entity
+[kinematics_node-4] [INFO] [1784767799.548804724] [diff_offset_kinematics]: DiffOffsetKinematics reorganizado listo.
+[gazebo-1] Gazebo multi-robot simulator, version 11.10.2
+[gazebo-1] Copyright (C) 2012 Open Source Robotics Foundation.
+[gazebo-1] Released under the Apache 2 License.
+[gazebo-1] http://gazebosim.org
+[gazebo-1] 
+[gazebo-1] [1;33m[Wrn] [gazebo_ros_init.cpp:178] [0m[1;33m
+[gazebo-1] #     # ####### ####### ###  #####  #######
+[gazebo-1] ##    # #     #    #     #  #     # #
+[gazebo-1] # #   # #     #    #     #  #       #
+[gazebo-1] #  #  # #     #    #     #  #       #####
+[gazebo-1] #   # # #     #    #     #  #       #
+[gazebo-1] #    ## #     #    #     #  #     # #
+[gazebo-1] #     # #######    #    ###  #####  #######
+[gazebo-1] 
+[gazebo-1] This version of Gazebo, now called Gazebo classic, reaches end-of-life
+[gazebo-1] in January 2025. Users are highly encouraged to migrate to the new Gazebo
+[gazebo-1] using our migration guides (https://gazebosim.org/docs/latest/gazebo_classic_migration?utm_source=gazebo_ros_pkgs&utm_medium=cli)
+[gazebo-1] 
+[gazebo-1] [0m[1;33m
+[spawn_entity.py-3] [INFO] [1784767801.296725407] [spawn_entity]: Calling service /spawn_entity
+[gazebo-1] [1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[gazebo-1] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[gazebo-1] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.18.11[0m[1;32m
+[gazebo-1] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mWarning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.[0m[1;32m
+[gazebo-1] [0m[1;33m[0m[1;33m[0m[1;31m[Err] [InsertModelWidget.cc:403] [0m[1;31mMissing [0m[1;31mmodel.config[0m[1;31m for model [0m[1;31m"/home/edu/.gazebo/models/model_robot"[0m[1;31m
+[spawn_entity.py-3] [INFO] [1784767802.013516028] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [diff_offset_robot]
+[gazebo-1] [0m[INFO] [1784767802.106077334] [gazebo_lidar_joint_state]: Going to publish joint [body_wheel_joint]
+[gazebo-1] [INFO] [1784767802.106809456] [gazebo_lidar_joint_state]: Going to publish joint [caster_wheel_joint]
+[gazebo-1] [INFO] [1784767802.158401924] [gazebo_ros2_control]: Loading gazebo_ros2_control plugin
+[gazebo-1] [INFO] [1784767802.179498122] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in namespace: /
+[gazebo-1] [INFO] [1784767802.179617521] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in ros 2 node: gazebo_ros2_control
+[gazebo-1] [INFO] [1784767802.194363629] [gazebo_ros2_control]: connected to service!! robot_state_publisher
+[gazebo-1] [INFO] [1784767802.195724063] [gazebo_ros2_control]: Received urdf from param server, parsing...
+[gazebo-1] [INFO] [1784767802.195923434] [gazebo_ros2_control]: Loading parameter files /home/edu/diff_offset_robot/install/model_robot/share/model_robot/config/ros2_controller.yaml
+[gazebo-1] [INFO] [1784767802.224599991] [gazebo_ros2_control]: Loading joint: left_wheel_joint
+[gazebo-1] [INFO] [1784767802.224702612] [gazebo_ros2_control]: 	State:
+[gazebo-1] [INFO] [1784767802.224742249] [gazebo_ros2_control]: 		 position
+[gazebo-1] [INFO] [1784767802.224779438] [gazebo_ros2_control]: 		 velocity
+[gazebo-1] [INFO] [1784767802.224803905] [gazebo_ros2_control]: 		 effort
+[gazebo-1] [INFO] [1784767802.224826834] [gazebo_ros2_control]: 	Command:
+[INFO] [spawn_entity.py-3]: process has finished cleanly [pid 5063]
+[gazebo-1] [INFO] [1784767802.225277866] [gazebo_ros2_control]: 		 velocity
+[gazebo-1] [INFO] [1784767802.226195447] [gazebo_ros2_control]: 		 effort
+[gazebo-1] [INFO] [1784767802.226274301] [gazebo_ros2_control]: Loading joint: right_wheel_joint
+[gazebo-1] [INFO] [1784767802.226315685] [gazebo_ros2_control]: 	State:
+[gazebo-1] [INFO] [1784767802.226353294] [gazebo_ros2_control]: 		 position
+[gazebo-1] [INFO] [1784767802.226391533] [gazebo_ros2_control]: 		 velocity
+[gazebo-1] [INFO] [1784767802.226415860] [gazebo_ros2_control]: 		 effort
+[gazebo-1] [INFO] [1784767802.226438299] [gazebo_ros2_control]: 	Command:
+[gazebo-1] [INFO] [1784767802.226468848] [gazebo_ros2_control]: 		 velocity
+[gazebo-1] [INFO] [1784767802.227326521] [gazebo_ros2_control]: 		 effort
+[gazebo-1] [INFO] [1784767802.227396147] [gazebo_ros2_control]: Loading joint: top_base_joint
+[gazebo-1] [INFO] [1784767802.227455776] [gazebo_ros2_control]: 	State:
+[gazebo-1] [INFO] [1784767802.227492966] [gazebo_ros2_control]: 		 position
+[gazebo-1] [INFO] [1784767802.227528199] [gazebo_ros2_control]: 		 velocity
+[gazebo-1] [INFO] [1784767802.227559656] [gazebo_ros2_control]: 		 effort
+[gazebo-1] [INFO] [1784767802.227612365] [gazebo_ros2_control]: 	Command:
+[gazebo-1] [INFO] [1784767802.227658642] [gazebo_ros2_control]: 		 velocity
+[gazebo-1] [INFO] [1784767802.228275001] [gazebo_ros2_control]: 		 effort
+[gazebo-1] [INFO] [1784767802.228436273] [resource_manager]: Initialize hardware 'diff_offset_robot_control' 
+[INFO] [spawner-12]: process started with pid [5418]
+[INFO] [spawner-13]: process started with pid [5420]
+[INFO] [spawner-14]: process started with pid [5422]
+[gazebo-1] [INFO] [1784767802.228778181] [resource_manager]: Successful initialization of hardware 'diff_offset_robot_control'
+[gazebo-1] [INFO] [1784767802.228987829] [resource_manager]: 'configure' hardware 'diff_offset_robot_control' 
+[gazebo-1] [INFO] [1784767802.229023690] [resource_manager]: Successful 'configure' of hardware 'diff_offset_robot_control'
+[gazebo-1] [INFO] [1784767802.229052282] [resource_manager]: 'activate' hardware 'diff_offset_robot_control' 
+[gazebo-1] [INFO] [1784767802.229077028] [resource_manager]: Successful 'activate' of hardware 'diff_offset_robot_control'
+[gazebo-1] [INFO] [1784767802.229294295] [gazebo_ros2_control]: Loading controller_manager
+[gazebo-1] [WARN] [1784767802.306269017] [gazebo_ros2_control]:  Desired controller update period (0.01 s) is slower than the gazebo simulation period (0.001 s).
+[gazebo-1] [INFO] [1784767802.306941159] [gazebo_ros2_control]: Loaded gazebo_ros2_control.
+[localization_slam_toolbox_node-5] [WARN] [1784767802.453368055] [slam_toolbox]: minimum laser range setting (0.1 m) exceeds the capabilities of the used Lidar (0.4 m)
+[localization_slam_toolbox_node-5] Registering sensor: [Custom Described Lidar]
+[localization_slam_toolbox_node-5] W0722 19:50:02.551566  5172 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 16.  Bounding to maximum number available.
+[planner_server-7] [INFO] [1784767803.019926296] [planner_server]: Configured plugin GridBased of type SmacPlannerHybrid with maximum iterations 1000000, max on approach iterations 1000, and allowing unknown traversal. Tolerance 0.30.Using motion model: Dubin.
+[planner_server-7] [INFO] [1784767803.020006404] [planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-10] [INFO] [1784767803.033730670] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-8] [INFO] [1784767803.034090735] [behavior_server]: Configuring
+[behavior_server-8] [INFO] [1784767803.053643705] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-8] [INFO] [1784767803.056507657] [behavior_server]: Configuring spin
+[behavior_server-8] [INFO] [1784767803.070126302] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-8] [INFO] [1784767803.072282567] [behavior_server]: Configuring backup
+[behavior_server-8] [INFO] [1784767803.081544295] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-8] [INFO] [1784767803.083514900] [behavior_server]: Configuring wait
+[lifecycle_manager-10] [INFO] [1784767803.091816594] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-9] [INFO] [1784767803.092333449] [bt_navigator]: Configuring
+[lifecycle_manager-10] [INFO] [1784767803.338076856] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-6] [INFO] [1784767803.338783844] [controller_server]: Activating
+[controller_server-6] [INFO] [1784767803.338877373] [local_costmap.local_costmap]: Activating
+[controller_server-6] [INFO] [1784767803.338920502] [local_costmap.local_costmap]: Checking transform
+[controller_server-6] [INFO] [1784767803.339153905] [local_costmap.local_costmap]: start
+[spawner-14] [INFO] [1784767803.417883129] [spawner_platform_controller]: waiting for service /controller_manager/list_controllers to become available...
+[spawner-12] [INFO] [1784767803.419097815] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[controller_server-6] [INFO] [1784767803.551991534] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[lifecycle_manager-10] [INFO] [1784767803.664323458] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-10] [INFO] [1784767803.664485840] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[planner_server-7] [INFO] [1784767803.665043588] [planner_server]: Activating
+[planner_server-7] [INFO] [1784767803.665129287] [global_costmap.global_costmap]: Activating
+[planner_server-7] [INFO] [1784767803.665182203] [global_costmap.global_costmap]: Checking transform
+[planner_server-7] [INFO] [1784767803.665408546] [global_costmap.global_costmap]: start
+[rviz2-11] [INFO] [1784767803.740719006] [rviz2]: Trying to create a map of size 158 x 158 using 1 swatches
+[rviz2-11] [ERROR] [1784767803.772487619] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[rviz2-11] active samplers with a different type refer to the same texture image unit
+[gazebo-1] [INFO] [1784767804.010719726] [controller_manager]: Loading controller 'wheel_controller'
+[gazebo-1] [INFO] [1784767804.076618731] [controller_manager]: Loading controller 'platform_controller'
+[gazebo-1] [INFO] [1784767804.113520642] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[spawner-14] [INFO] [1784767804.115738799] [spawner_platform_controller]: [94mLoaded [1mplatform_controller[0m
+[spawner-13] [INFO] [1784767804.125075485] [spawner_wheel_controller]: [94mLoaded [1mwheel_controller[0m
+[gazebo-1] [INFO] [1784767804.152809375] [controller_manager]: Configuring controller 'platform_controller'
+[spawner-12] [INFO] [1784767804.154363916] [spawner_joint_state_broadcaster]: [94mLoaded [1mjoint_state_broadcaster[0m
+[gazebo-1] [INFO] [1784767804.156731657] [platform_controller]: configure successful
+[gazebo-1] [INFO] [1784767804.164840437] [controller_manager]: Configuring controller 'joint_state_broadcaster'
+[gazebo-1] [INFO] [1784767804.165117864] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[gazebo-1] [INFO] [1784767804.201886548] [platform_controller]: activate successful
+[gazebo-1] [INFO] [1784767804.214292824] [controller_manager]: Configuring controller 'wheel_controller'
+[spawner-14] [INFO] [1784767804.216087607] [spawner_platform_controller]: [92mConfigured and activated [1mplatform_controller[0m
+[gazebo-1] [INFO] [1784767804.216149188] [wheel_controller]: configure successful
+[spawner-12] [INFO] [1784767804.251765596] [spawner_joint_state_broadcaster]: [92mConfigured and activated [1mjoint_state_broadcaster[0m
+[gazebo-1] [INFO] [1784767804.262556659] [wheel_controller]: activate successful
+[spawner-13] [INFO] [1784767804.278020434] [spawner_wheel_controller]: [92mConfigured and activated [1mwheel_controller[0m
+[INFO] [spawner-14]: process has finished cleanly [pid 5422]
+[INFO] [spawner-12]: process has finished cleanly [pid 5418]
+[INFO] [spawner-13]: process has finished cleanly [pid 5420]
+[gazebo-1] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[gazebo-1] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[gazebo-1] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.18.11[0m[1;32m
+[gazebo-1] [0m[1;32m[0m[1;32m[0m[1;32m[Msg] [0m[1;32mLoading world file [[0m[1;32m/home/edu/diff_offset_robot/install/model_robot/share/model_robot/worlds/room_with_pillars.world[0m[1;32m][0m[1;32m
+[planner_server-7] [INFO] [1784767804.717122037] [planner_server]: Activating plugin GridBased of type SmacPlannerHybrid
+[planner_server-7] [INFO] [1784767804.719506553] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[lifecycle_manager-10] [INFO] [1784767804.827395307] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-10] [INFO] [1784767804.827481772] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[behavior_server-8] [INFO] [1784767804.828195505] [behavior_server]: Activating
+[behavior_server-8] [INFO] [1784767804.828325796] [behavior_server]: Activating spin
+[behavior_server-8] [INFO] [1784767804.828367944] [behavior_server]: Activating backup
+[behavior_server-8] [INFO] [1784767804.828398001] [behavior_server]: Activating wait
+[behavior_server-8] [INFO] [1784767804.828433789] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[lifecycle_manager-10] [INFO] [1784767804.936630026] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-10] [INFO] [1784767804.936707893] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[bt_navigator-9] [INFO] [1784767804.937190123] [bt_navigator]: Activating
+[bt_navigator-9] [INFO] [1784767805.026768899] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[localization_slam_toolbox_node-5] [INFO] [1784767805.044348518] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 2.512 for reason 'discarding message because the queue is full'
+[lifecycle_manager-10] [INFO] [1784767805.134322359] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-10] [INFO] [1784767805.134390506] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-10] [INFO] [1784767805.134412733] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[localization_slam_toolbox_node-5] [INFO] [1784767807.613453647] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 5.012 for reason 'discarding message because the queue is full'
+[localization_slam_toolbox_node-5] [INFO] [1784767810.244391447] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 7.511 for reason 'discarding message because the queue is full'
+[localization_slam_toolbox_node-5] [INFO] [1784767812.866589084] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 10.012 for reason 'discarding message because the queue is full'
+[localization_slam_toolbox_node-5] [INFO] [1784767815.447998673] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 12.512 for reason 'discarding message because the queue is full'
+[localization_slam_toolbox_node-5] [INFO] [1784767818.101958114] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 15.012 for reason 'discarding message because the queue is full'
+[localization_slam_toolbox_node-5] [INFO] [1784767820.726650696] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 17.512 for reason 'discarding message because the queue is full'
+[localization_slam_toolbox_node-5] [INFO] [1784767823.340933365] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 20.012 for reason 'discarding message because the queue is full'
+[localization_slam_toolbox_node-5] [INFO] [1784767825.974887802] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 22.512 for reason 'discarding message because the queue is full'
+[localization_slam_toolbox_node-5] [INFO] [1784767828.599663887] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 25.012 for reason 'discarding message because the queue is full'
+[localization_slam_toolbox_node-5] [INFO] [1784767831.225919732] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 27.512 for reason 'discarding message because the queue is full'
+[localization_slam_toolbox_node-5] [INFO] [1784767833.859899758] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 30.012 for reason 'discarding message because the queue is full'
+[localization_slam_toolbox_node-5] [INFO] [1784767836.479001968] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 32.512 for reason 'discarding message because the queue is full'
+[localization_slam_toolbox_node-5] [INFO] [1784767839.089890812] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 35.012 for reason 'discarding message because the queue is full'
+[localization_slam_toolbox_node-5] [INFO] [1784767841.762640128] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 37.512 for reason 'discarding message because the queue is full'
+[localization_slam_toolbox_node-5] [INFO] [1784767844.427001444] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 40.012 for reason 'discarding message because the queue is full'
+[rviz2-11] [INFO] [1784767846.916256335] [rviz2]: Setting goal pose: Frame:map, Position(-2.08271, 3.11679, 0), Orientation(0, 0, -0.999783, 0.0208199) = Angle: -3.09995
+[bt_navigator-9] [INFO] [1784767846.917823483] [bt_navigator]: Begin navigating from current location (0.01, -0.00) to (-2.08, 3.12)
+[controller_server-6] [INFO] [1784767846.949661320] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-6] [WARN] [1784767846.949796409] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+[localization_slam_toolbox_node-5] [INFO] [1784767847.109543493] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 42.512 for reason 'discarding message because the queue is full'
+[controller_server-6] [INFO] [1784767848.000216654] [controller_server]: Passing new path to controller.
+[bt_navigator-9] [WARN] [1784767848.442500540] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[localization_slam_toolbox_node-5] W0722 19:50:48.478629  5172 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 16.  Bounding to maximum number available.
+[controller_server-6] [INFO] [1784767849.050202091] [controller_server]: Passing new path to controller.
+[localization_slam_toolbox_node-5] W0722 19:50:49.372347  5172 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 16.  Bounding to maximum number available.
+[localization_slam_toolbox_node-5] [INFO] [1784767849.703279569] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 45.012 for reason 'discarding message because the queue is full'
+[controller_server-6] [INFO] [1784767850.050220225] [controller_server]: Passing new path to controller.
+[localization_slam_toolbox_node-5] W0722 19:50:50.086581  5172 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 16.  Bounding to maximum number available.
+[localization_slam_toolbox_node-5] W0722 19:50:50.728178  5172 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 16.  Bounding to maximum number available.
+[controller_server-6] [INFO] [1784767851.100252943] [controller_server]: Passing new path to controller.
+[localization_slam_toolbox_node-5] W0722 19:50:51.437011  5172 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 16.  Bounding to maximum number available.
+[controller_server-6] [INFO] [1784767852.100242757] [controller_server]: Passing new path to controller.
+[localization_slam_toolbox_node-5] W0722 19:50:52.161556  5172 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 16.  Bounding to maximum number available.
+[localization_slam_toolbox_node-5] W0722 19:50:52.206468  5172 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 16.  Bounding to maximum number available.
+[localization_slam_toolbox_node-5] [INFO] [1784767852.502125110] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 47.513 for reason 'discarding message because the queue is full'
+[controller_server-6] [INFO] [1784767853.150203459] [controller_server]: Passing new path to controller.
+[localization_slam_toolbox_node-5] W0722 19:50:53.404318  5172 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 16.  Bounding to maximum number available.
+[localization_slam_toolbox_node-5] W0722 19:50:54.114013  5172 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 16.  Bounding to maximum number available.
+[controller_server-6] [INFO] [1784767854.200226686] [controller_server]: Passing new path to controller.
+[planner_server-7] [INFO] [1784767854.665590618] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 158 X 158 at 0.050000 m/pix
+[localization_slam_toolbox_node-5] W0722 19:50:54.836220  5172 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 16.  Bounding to maximum number available.
+[localization_slam_toolbox_node-5] [INFO] [1784767855.060551906] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 50.013 for reason 'discarding message because the queue is full'
+[controller_server-6] [INFO] [1784767855.200255764] [controller_server]: Passing new path to controller.
+[localization_slam_toolbox_node-5] W0722 19:50:55.572747  5172 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 16.  Bounding to maximum number available.
+[controller_server-6] [INFO] [1784767856.250233088] [controller_server]: Passing new path to controller.
+[localization_slam_toolbox_node-5] W0722 19:50:56.328449  5172 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 16.  Bounding to maximum number available.
+[controller_server-6] [INFO] [1784767857.250229058] [controller_server]: Passing new path to controller.
+[localization_slam_toolbox_node-5] [INFO] [1784767857.674055143] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 52.513 for reason 'discarding message because the queue is full'
+[controller_server-6] [INFO] [1784767858.300213226] [controller_server]: Passing new path to controller.
+[localization_slam_toolbox_node-5] W0722 19:50:58.887629  5172 preprocessor.cc:62] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 16.  Bounding to maximum number available.
+[controller_server-6] [INFO] [1784767859.350213278] [controller_server]: Passing new path to controller.
+[planner_server-7] [INFO] [1784767859.665575712] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 158 X 158 at 0.050000 m/pix
+[localization_slam_toolbox_node-5] [INFO] [1784767860.256756301] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 55.014 for reason 'discarding message because the queue is full'
+[controller_server-6] [INFO] [1784767860.350229182] [controller_server]: Passing new path to controller.
+[controller_server-6] [INFO] [1784767861.400226947] [controller_server]: Passing new path to controller.
+[controller_server-6] [INFO] [1784767862.400233277] [controller_server]: Passing new path to controller.
+[localization_slam_toolbox_node-5] [INFO] [1784767862.827070107] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 57.514 for reason 'discarding message because the queue is full'
+[controller_server-6] [INFO] [1784767863.450198590] [controller_server]: Passing new path to controller.
+[controller_server-6] [INFO] [1784767864.500213660] [controller_server]: Passing new path to controller.
+[planner_server-7] [INFO] [1784767864.665599247] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 158 X 158 at 0.050000 m/pix
+[localization_slam_toolbox_node-5] [INFO] [1784767865.399413912] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 60.013 for reason 'discarding message because the queue is full'
+[controller_server-6] [INFO] [1784767865.500220327] [controller_server]: Passing new path to controller.
+[controller_server-6] [INFO] [1784767866.550240892] [controller_server]: Passing new path to controller.
+[controller_server-6] [INFO] [1784767867.550239847] [controller_server]: Passing new path to controller.
+[localization_slam_toolbox_node-5] [INFO] [1784767867.974677466] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 62.514 for reason 'discarding message because the queue is full'
+[controller_server-6] [INFO] [1784767868.600244824] [controller_server]: Passing new path to controller.
+[controller_server-6] [INFO] [1784767869.650197757] [controller_server]: Passing new path to controller.
+[localization_slam_toolbox_node-5] [INFO] [1784767870.553480144] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 65.013 for reason 'discarding message because the queue is full'
+[controller_server-6] [INFO] [1784767870.650253114] [controller_server]: Passing new path to controller.
+[controller_server-6] [INFO] [1784767871.700213810] [controller_server]: Passing new path to controller.
+[controller_server-6] [INFO] [1784767872.700222077] [controller_server]: Passing new path to controller.
+[localization_slam_toolbox_node-5] [INFO] [1784767873.162695134] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 67.514 for reason 'discarding message because the queue is full'
+[controller_server-6] [INFO] [1784767873.750261145] [controller_server]: Passing new path to controller.
+[controller_server-6] [INFO] [1784767874.800240287] [controller_server]: Passing new path to controller.
+[localization_slam_toolbox_node-5] [INFO] [1784767875.739151492] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 70.014 for reason 'discarding message because the queue is full'
+[controller_server-6] [INFO] [1784767875.800251576] [controller_server]: Passing new path to controller.
+[controller_server-6] [INFO] [1784767876.850232910] [controller_server]: Passing new path to controller.
+[controller_server-6] [INFO] [1784767877.850215899] [controller_server]: Passing new path to controller.
+[localization_slam_toolbox_node-5] [INFO] [1784767878.322060770] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 72.514 for reason 'discarding message because the queue is full'
+[controller_server-6] [ERROR] [1784767878.600354260] [controller_server]: Failed to make progress
+[controller_server-6] [WARN] [1784767878.600542250] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-6] [INFO] [1784767878.618490174] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-6] [INFO] [1784767878.619819508] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-6] [WARN] [1784767878.757747982] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-6] [INFO] [1784767878.896328802] [controller_server]: Passing new path to controller.
+[controller_server-6] [INFO] [1784767879.957840975] [controller_server]: Passing new path to controller.
+[localization_slam_toolbox_node-5] [INFO] [1784767880.895345618] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 75.014 for reason 'discarding message because the queue is full'
+[controller_server-6] [INFO] [1784767880.957860856] [controller_server]: Passing new path to controller.
+[controller_server-6] [INFO] [1784767882.007885026] [controller_server]: Passing new path to controller.
+[controller_server-6] [INFO] [1784767883.007857658] [controller_server]: Passing new path to controller.
+[localization_slam_toolbox_node-5] [INFO] [1784767883.470819866] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 77.514 for reason 'discarding message because the queue is full'
+[controller_server-6] [INFO] [1784767884.057856855] [controller_server]: Passing new path to controller.
+[controller_server-6] [INFO] [1784767885.107830003] [controller_server]: Passing new path to controller.
+[localization_slam_toolbox_node-5] [INFO] [1784767886.043214925] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 80.014 for reason 'discarding message because the queue is full'
+[controller_server-6] [INFO] [1784767886.107866122] [controller_server]: Passing new path to controller.
+[controller_server-6] [INFO] [1784767887.157840676] [controller_server]: Passing new path to controller.
+[controller_server-6] [INFO] [1784767888.157858947] [controller_server]: Passing new path to controller.
+[localization_slam_toolbox_node-5] [INFO] [1784767888.608422274] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 82.515 for reason 'discarding message because the queue is full'
+[controller_server-6] [ERROR] [1784767889.107936269] [controller_server]: Failed to make progress
+[controller_server-6] [WARN] [1784767889.108208693] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-6] [INFO] [1784767889.128514412] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[planner_server-7] [INFO] [1784767889.129206573] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[controller_server-6] [INFO] [1784767889.688726511] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-6] [INFO] [1784767890.739145359] [controller_server]: Passing new path to controller.
+[localization_slam_toolbox_node-5] [INFO] [1784767891.237686420] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 85.015 for reason 'discarding message because the queue is full'
+[controller_server-6] [INFO] [1784767891.789152364] [controller_server]: Passing new path to controller.
+[controller_server-6] [INFO] [1784767892.789152420] [controller_server]: Passing new path to controller.
+[localization_slam_toolbox_node-5] [INFO] [1784767893.803020915] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 87.515 for reason 'discarding message because the queue is full'
+[controller_server-6] [INFO] [1784767893.839136815] [controller_server]: Passing new path to controller.
+[controller_server-6] [INFO] [1784767894.839177242] [controller_server]: Passing new path to controller.
+[controller_server-6] [INFO] [1784767895.889178935] [controller_server]: Passing new path to controller.
+[localization_slam_toolbox_node-5] [INFO] [1784767896.414225673] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 90.015 for reason 'discarding message because the queue is full'
+[controller_server-6] [INFO] [1784767896.939153199] [controller_server]: Passing new path to controller.
+[controller_server-6] [INFO] [1784767897.702868717] [controller_server]: Reached the goal!
+[bt_navigator-9] [INFO] [1784767897.738249942] [bt_navigator]: Goal succeeded
+[localization_slam_toolbox_node-5] [INFO] [1784767898.993326796] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 92.515 for reason 'discarding message because the queue is full'
+[localization_slam_toolbox_node-5] [INFO] [1784767901.719927488] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 95.015 for reason 'discarding message because the queue is full'
+[localization_slam_toolbox_node-5] [INFO] [1784767904.421001337] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 97.515 for reason 'discarding message because the queue is full'
+[localization_slam_toolbox_node-5] [INFO] [1784767907.094593419] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 100.015 for reason 'discarding message because the queue is full'
+[localization_slam_toolbox_node-5] [INFO] [1784767909.772114887] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 102.515 for reason 'discarding message because the queue is full'
+[localization_slam_toolbox_node-5] [INFO] [1784767912.448977822] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 105.015 for reason 'discarding message because the queue is full'
+[localization_slam_toolbox_node-5] [INFO] [1784767915.148236120] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 107.515 for reason 'discarding message because the queue is full'
+[localization_slam_toolbox_node-5] [INFO] [1784767917.814393713] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 110.015 for reason 'discarding message because the queue is full'
+[localization_slam_toolbox_node-5] [INFO] [1784767920.376613813] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 112.514 for reason 'discarding message because the queue is full'
+[localization_slam_toolbox_node-5] [INFO] [1784767923.120841282] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 115.015 for reason 'discarding message because the queue is full'
+[localization_slam_toolbox_node-5] [INFO] [1784767925.707351429] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 117.515 for reason 'discarding message because the queue is full'
+[localization_slam_toolbox_node-5] [INFO] [1784767928.329743902] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 120.014 for reason 'discarding message because the queue is full'
+[localization_slam_toolbox_node-5] [INFO] [1784767930.961201612] [slam_toolbox]: Message Filter dropping message: frame 'lidar_link' at time 122.515 for reason 'discarding message because the queue is full'

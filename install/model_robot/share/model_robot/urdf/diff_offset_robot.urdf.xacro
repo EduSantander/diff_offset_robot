@@ -442,7 +442,7 @@
 
       <visualize>true</visualize>
 
-      <update_rate>10.0</update_rate>
+      <update_rate>20.0</update_rate>
 
       <ray>
         <scan>
