@@ -10,12 +10,8 @@ setup.py
 ../../build/kinematics_controller/kinematics_controller.egg-info/zip-safe
 kinematics_controller/__init__.py
 kinematics_controller/custom_teleop.py
-kinematics_controller/data_logger.py
 kinematics_controller/kinematics_node.py
-kinematics_controller/manual_trajectory_logger.py
-kinematics_controller/platform_validation_logger.py
-kinematics_controller/vxy_logger.py
-kinematics_controller/wheel_sysid_logger.py
+kinematics_controller/platform_orientation_controller.py
 resource/kinematics_controller
 test/test_copyright.py
 test/test_flake8.py

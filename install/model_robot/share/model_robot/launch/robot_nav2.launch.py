@@ -29,7 +29,7 @@ def generate_launch_description():
     # Fix conocido de gazebo_ros2_control: quitar comentarios XML
     robot_desc = re.sub(r'<!--.*?-->', '', robot_desc, flags=re.DOTALL)
 
-    # Gazebo, ahora cargando NUESTRO mundo en vez del vacio por default
+    # Gazebo, cargando el mundo del cuarto con pilares
     gazebo = ExecuteProcess(
         cmd=['gazebo', '--verbose', world_file,
              '-s', 'libgazebo_ros_init.so',
@@ -115,10 +115,19 @@ def generate_launch_description():
         output='screen'
     )
 
-    # slam_toolbox usa un EJECUTABLE distinto segun el modo:
-    # - sync_slam_toolbox_node -> mapeo online (construye un mapa nuevo)
-    # - localization_slam_toolbox_node -> carga un pose-graph existente
-    #   y solo se localiza contra el (esto es lo que necesita mi_mapa.posegraph)
+    # NUEVO: control de orientacion de la plataforma, independiente
+    # del chasis. Ver platform_orientation_controller.py
+    platform_orientation_node = Node(
+        package='kinematics_controller',
+        executable='platform_orientation_controller',
+        parameters=[
+            {'use_sim_time': use_sim_time},
+            {'Kp_theta_p': 1.5},
+            {'max_phi_dot': 3.0},
+        ],
+        output='screen'
+    )
+
     is_localization = PythonExpression(["'", slam_mode, "' == 'localization'"])
     is_mapping = PythonExpression(["'", slam_mode, "' == 'mapping'"])
 
@@ -145,27 +154,12 @@ def generate_launch_description():
                 'use_sim_time': use_sim_time,
                 'mode': 'localization',
                 'map_file_name': map_file,
-                # CRITICO: sin esto, el nodo de localizacion nunca
-                # inicializa y por lo tanto nunca publica map->odom.
-                # (0,0,0) porque el robot siempre spawnea ahi en el mundo.
                 'map_start_pose': [0.0, 0.0, 0.0],
             }
         ],
         condition=IfCondition(is_localization)
     )
 
-    rviz2 = Node(
-        package='rviz2',
-        executable='rviz2',
-        name='rviz2',
-        arguments=['-d', rviz_config_file],
-        parameters=[{'use_sim_time': use_sim_time}],
-        output='log'
-    )
-
-    # ================= NAV2 =================
-    # No incluimos amcl ni map_server: slam_toolbox ya publica /map y
-    # la TF map->odom, asi que Nav2 se apoya directo en eso.
     controller_server = Node(
         package='nav2_controller',
         executable='controller_server',
@@ -215,6 +209,15 @@ def generate_launch_description():
         }]
     )
 
+    rviz2 = Node(
+        package='rviz2',
+        executable='rviz2',
+        name='rviz2',
+        arguments=['-d', rviz_config_file],
+        parameters=[{'use_sim_time': use_sim_time}],
+        output='log'
+    )
+
     return LaunchDescription([
         declare_use_sim_time_cmd,
         declare_slam_mode_cmd,
@@ -224,6 +227,7 @@ def generate_launch_description():
         spawn,
         controllers_after_spawn,
         kinematics_node,
+        platform_orientation_node,
         slam_toolbox_mapping_node,
         slam_toolbox_localization_node,
         controller_server,

@@ -26,10 +26,10 @@ setup(
         'console_scripts': [
             'kinematics_node = kinematics_controller.kinematics_node:main',
             'teleop_node = kinematics_controller.custom_teleop:main',
-            'vxy_logger = kinematics_controller.vxy_logger:main',
-            'manual_logger = kinematics_controller.manual_trajectory_logger:main',
-            'platform_logger = kinematics_controller.platform_validation_logger:main',
-            'wheel_logger = kinematics_controller.wheel_sysid_logger:main'
+            'wheel_logger = loggers.wheel_sysid_logger:main',
+            'nav2_eval = loggers.nav2_eval:main',
+            'analyze_nav2 = loggers.analyze_nav2_results:main',
+            'platform_orientation_controller = kinematics_controller.platform_orientation_controller:main',
         ],
     },
 )

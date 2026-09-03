@@ -16,8 +16,12 @@ controller_server:
 
     general_goal_checker:
       plugin: "nav2_controller::SimpleGoalChecker"
-      xy_goal_tolerance: 0.15
-      yaw_goal_tolerance: 0.2
+      xy_goal_tolerance: 0.20
+      # SUBIDO a ~pi: la orientacion del CHASIS ya no es parte de la
+      # mision (eso ahora lo resuelve platform_orientation_controller
+      # sobre theta_p, de forma independiente). El goal checker de Nav2
+      # solo debe exigir posicion.
+      yaw_goal_tolerance: 3.15
       stateful: true
 
     FollowPath:
@@ -26,15 +30,6 @@ controller_server:
 
       min_vel_x: -0.3
       max_vel_x: 0.4
-      # REDUCIDO: con d1=0.11225, omega_c = vy/d1. Con max_vel_y=0.3
-      # el chasis podia pedir hasta ~2.67 rad/s solo para ejecutar vy,
-      # distorsionando el escaneo del lidar (10Hz = 0.1s por escaneo,
-      # ~15 grados de giro DURANTE un solo escaneo). Bajamos el limite
-      # para que el giro resultante sea manejable.
-      # Subido un poco de 0.08 a 0.12 -- sigue muy por debajo del 0.3
-      # original que distorsionaba el lidar, pero le da mas margen al
-      # controlador para trazar los arcos mas cerrados que necesita un
-      # giro de 180 grados en poca distancia.
       min_vel_y: -0.12
       max_vel_y: 0.12
       max_vel_theta: 1.8
@@ -43,11 +38,11 @@ controller_server:
       min_speed_theta: 0.0
 
       acc_lim_x: 1.0
-      acc_lim_y: 1.0
-      acc_lim_theta: 2.5
+      acc_lim_y: 1.4
+      acc_lim_theta: 3.5
       decel_lim_x: -1.0
-      decel_lim_y: -1.0
-      decel_lim_theta: -2.5
+      decel_lim_y: -1.4
+      decel_lim_theta: -3.5
 
       vx_samples: 15
       vy_samples: 8
@@ -58,32 +53,23 @@ controller_server:
       angular_granularity: 0.025
       transform_tolerance: 0.2
       trans_stopped_velocity: 0.1
-      # Desactivado: con esto en true, DWB podia descartar una trayectoria
-      # de "quedarse quieto y solo girar" por mal puntaje de PathDist/GoalDist
-      # ANTES de llegar a evaluar RotateToGoal (que va al final de la lista
-      # de criticos) -- eso explicaria que nunca convergiera a la orientacion
-      # final. Con false, se evaluan TODOS los criticos siempre.
       short_circuit_trajectory_evaluation: false
       limit_vel_cmd_in_traj: false
 
-      # RotateToGoal es el UNICO critico que empuja hacia la orientacion
-      # FINAL exacta pedida en el goal -- los demas solo evaluan la
-      # trayectoria hacia la posicion, no el angulo final. Es seguro
-      # agregarlo aunque el robot sea holonomico: solo comanda rotacion
-      # pura (angular.z), nunca vy, asi que no dispara el efecto
-      # omega_c = vy/d1 que nos preocupaba antes.
-      # RotateToGoal QUITADO: ese critico premia explicitamente vx=vy=0
-      # mientras gira -- justo la combinacion que tu propia matriz M
-      # prueba que fuerza alphaL=alphaR=0 (el chasis no puede girar).
-      # Ahora que SmacPlannerHybrid ya entrega un camino curvo que
-      # termina en la orientacion correcta, subimos el peso de PathAlign
-      # para que el controlador seguir esa curva de cerca -- el giro
-      # final se logra MIENTRAS se traslada, nunca detenido.
+      # Sin RotateToGoal (nunca tuvo sentido para esta cinematica) y
+      # ahora tampoco necesitamos que PathAlign/GoalAlign se esfuercen
+      # tanto en orientacion del chasis -- solo posicion importa.
+      # RotateToGoal ya no aplica (chasis solo posiciona). BaseObstacle
+      # SUBIDO drasticamente: en 0.02 era ~1000x mas debil que los
+      # criticos de seguimiento de camino, asi que casi nunca ganaba --
+      # el robot seguia de largo hasta chocar. Con un peso comparable,
+      # el controlador SI puede preferir frenar/retroceder/desviarse
+      # cuando hay un obstaculo cerca, en vez de solo perseguir el plan.
       critics: ["Oscillation", "BaseObstacle", "GoalAlign", "PathAlign", "PathDist", "GoalDist"]
-      BaseObstacle.scale: 0.02
-      PathAlign.scale: 60.0
+      BaseObstacle.scale: 24.0
+      PathAlign.scale: 32.0
       GoalAlign.scale: 24.0
-      PathDist.scale: 32.0
+      PathDist.scale: 24.0
       GoalDist.scale: 24.0
 
 planner_server:
@@ -91,49 +77,15 @@ planner_server:
     use_sim_time: true
     planner_plugins: ["GridBased"]
     GridBased:
-      # Cambiado de NavfnPlanner a SmacPlannerHybrid: NavFn solo genera
-      # puntos XY y "pega" la orientacion final de golpe en el ultimo
-      # punto, sin curva progresiva. SmacPlannerHybrid genera una
-      # trayectoria que ya incluye un arco continuo que termina EXACTO
-      # en la orientacion pedida -- nunca pide vx=vy=0, asi que nunca
-      # choca con la restriccion fisica de tu cinematica (theta_c solo
-      # puede cambiar si vx o vy tambien lo hacen).
-      plugin: "nav2_smac_planner/SmacPlannerHybrid"
+      # REVERTIDO de SmacPlannerHybrid a NavfnPlanner: ya no necesitamos
+      # curvas conscientes de orientacion final (Dubin/Reeds-Shepp,
+      # radio de giro minimo). El chasis solo posiciona -- un
+      # planificador de rejilla simple es mas liviano y es exactamente
+      # lo que corresponde ahora.
+      plugin: "nav2_navfn_planner/NavfnPlanner"
       tolerance: 0.3
+      use_astar: false
       allow_unknown: true
-      max_iterations: 1000000
-      max_on_approach_iterations: 1000
-      max_planning_time: 5.0
-      # Cambiado de DUBIN a REEDS_SHEPP: DUBIN no permite retroceder, asi
-      # que cuando la orientacion meta queda "detras" del robot, el
-      # camino se ve forzado a dar un lazo grande para llegar sin
-      # reversa. Tu robot si puede ejecutar vx negativo (min_vel_x=-0.3),
-      # asi que no hay razon para esa restriccion -- REEDS_SHEPP la evita
-      # y genera caminos mas cortos/directos en esos casos.
-      motion_model_for_search: "REEDS_SHEPP"
-      angle_quantization_bins: 72
-      analytic_expansion_ratio: 3.5
-      analytic_expansion_max_length: 3.0
-      # SUBIDO de 0.08 a 0.5: con max_vel_y limitado a +-0.08 (para no
-      # distorsionar el lidar), el controlador NO puede ejecutar curvas
-      # tan cerradas como las que el planificador generaba con 0.08 --
-      # eso causaba "Failed to make progress" (se atoraba intentando
-      # seguir una curva que sus propios limites de velocidad no le
-      # permitian trazar). El radio planeado y lo que el controlador
-      # puede ejecutar deben ser consistentes entre si.
-      minimum_turning_radius: 0.35
-      reverse_penalty: 2.0
-      change_penalty: 0.0
-      non_straight_penalty: 1.2
-      cost_penalty: 2.0
-      retrospective_penalty: 0.015
-      cache_obstacle_heuristic: false
-      smooth_path: true
-      smoother:
-        max_iterations: 1000
-        w_smooth: 0.3
-        w_data: 0.2
-        tolerance: 1.0e-10
 
 behavior_server:
   ros__parameters:
@@ -177,7 +129,7 @@ local_costmap:
       width: 4
       height: 4
       resolution: 0.05
-      robot_radius: 0.3
+      robot_radius: 0.33
       plugins: ["obstacle_layer", "inflation_layer"]
       obstacle_layer:
         plugin: "nav2_costmap_2d::ObstacleLayer"
@@ -191,8 +143,8 @@ local_costmap:
           data_type: "LaserScan"
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
-        cost_scaling_factor: 3.0
-        inflation_radius: 0.4
+        cost_scaling_factor: 2.5
+        inflation_radius: 0.55
       always_send_full_costmap: true
 
 global_costmap:
@@ -203,7 +155,7 @@ global_costmap:
       publish_frequency: 1.0
       global_frame: map
       robot_base_frame: base_link
-      robot_radius: 0.3
+      robot_radius: 0.33
       resolution: 0.05
       track_unknown_space: true
       plugins: ["static_layer", "obstacle_layer", "inflation_layer"]
@@ -223,6 +175,6 @@ global_costmap:
           data_type: "LaserScan"
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
-        cost_scaling_factor: 3.0
-        inflation_radius: 0.4
+        cost_scaling_factor: 2.5
+        inflation_radius: 0.55
       always_send_full_costmap: true

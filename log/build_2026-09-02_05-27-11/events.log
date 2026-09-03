@@ -1,0 +1,76 @@
+[0.000000] (-) TimerEvent: {}
+[0.000665] (-) JobUnselected: {'identifier': 'model_robot'}
+[0.008063] (kinematics_controller) JobQueued: {'identifier': 'kinematics_controller', 'dependencies': OrderedDict()}
+[0.009670] (kinematics_controller) JobStarted: {'identifier': 'kinematics_controller'}
+[0.099297] (-) TimerEvent: {}
+[0.199753] (-) TimerEvent: {}
+[0.300246] (-) TimerEvent: {}
+[0.400863] (-) TimerEvent: {}
+[0.501407] (-) TimerEvent: {}
+[0.602054] (-) TimerEvent: {}
+[0.702668] (-) TimerEvent: {}
+[0.803206] (-) TimerEvent: {}
+[0.903679] (-) TimerEvent: {}
+[1.004127] (-) TimerEvent: {}
+[1.104582] (-) TimerEvent: {}
+[1.205053] (-) TimerEvent: {}
+[1.305486] (-) TimerEvent: {}
+[1.406015] (-) TimerEvent: {}
+[1.506494] (-) TimerEvent: {}
+[1.584525] (kinematics_controller) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/kinematics_controller', 'build', '--build-base', '/home/edu/diff_offset_robot/build/kinematics_controller/build', 'install', '--record', '/home/edu/diff_offset_robot/build/kinematics_controller/install.log', '--install-scripts', '$base/lib/kinematics_controller', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/edu/diff_offset_robot/src/kinematics_controller', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'edu', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/edu', 'OLDPWD': '/home/edu/diff_offset_robot', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2019', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=aa18b6935e1ef3b681778cb76a97f61a', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/edu/diff_offset_robot/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'edu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'edu', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/edu:@/tmp/.ICE-unix/2019,unix/edu:/tmp/.ICE-unix/2019', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ceb3821a_1749_472e_912b_d555e5bad4c3', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.W2CWU3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.141', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/edu/diff_offset_robot/install/model_robot:/home/edu/diff_offset_robot/install/kinematics_controller:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/edu/diff_offset_robot/build/kinematics_controller', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=aa18b6935e1ef3b681778cb76a97f61a', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/edu/diff_offset_robot/build/kinematics_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages:/home/edu/diff_offset_robot/install/model_robot/lib/python3.10/site-packages:/home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[1.606736] (-) TimerEvent: {}
+[1.707369] (-) TimerEvent: {}
+[1.808034] (-) TimerEvent: {}
+[1.908613] (-) TimerEvent: {}
+[2.009466] (-) TimerEvent: {}
+[2.109972] (-) TimerEvent: {}
+[2.198370] (kinematics_controller) StdoutLine: {'line': b'running egg_info\n'}
+[2.199602] (kinematics_controller) StdoutLine: {'line': b'creating ../../build/kinematics_controller/kinematics_controller.egg-info\n'}
+[2.200166] (kinematics_controller) StdoutLine: {'line': b'writing ../../build/kinematics_controller/kinematics_controller.egg-info/PKG-INFO\n'}
+[2.200807] (kinematics_controller) StdoutLine: {'line': b'writing dependency_links to ../../build/kinematics_controller/kinematics_controller.egg-info/dependency_links.txt\n'}
+[2.201298] (kinematics_controller) StdoutLine: {'line': b'writing entry points to ../../build/kinematics_controller/kinematics_controller.egg-info/entry_points.txt\n'}
+[2.201620] (kinematics_controller) StdoutLine: {'line': b'writing requirements to ../../build/kinematics_controller/kinematics_controller.egg-info/requires.txt\n'}
+[2.202032] (kinematics_controller) StdoutLine: {'line': b'writing top-level names to ../../build/kinematics_controller/kinematics_controller.egg-info/top_level.txt\n'}
+[2.202475] (kinematics_controller) StdoutLine: {'line': b"writing manifest file '../../build/kinematics_controller/kinematics_controller.egg-info/SOURCES.txt'\n"}
+[2.206043] (kinematics_controller) StdoutLine: {'line': b"reading manifest file '../../build/kinematics_controller/kinematics_controller.egg-info/SOURCES.txt'\n"}
+[2.207469] (kinematics_controller) StdoutLine: {'line': b"writing manifest file '../../build/kinematics_controller/kinematics_controller.egg-info/SOURCES.txt'\n"}
+[2.208050] (kinematics_controller) StdoutLine: {'line': b'running build\n'}
+[2.208394] (kinematics_controller) StdoutLine: {'line': b'running build_py\n'}
+[2.208746] (kinematics_controller) StdoutLine: {'line': b'creating /home/edu/diff_offset_robot/build/kinematics_controller/build\n'}
+[2.208942] (kinematics_controller) StdoutLine: {'line': b'creating /home/edu/diff_offset_robot/build/kinematics_controller/build/lib\n'}
+[2.209198] (kinematics_controller) StdoutLine: {'line': b'creating /home/edu/diff_offset_robot/build/kinematics_controller/build/lib/kinematics_controller\n'}
+[2.209356] (kinematics_controller) StdoutLine: {'line': b'copying kinematics_controller/platform_orientation_controller.py -> /home/edu/diff_offset_robot/build/kinematics_controller/build/lib/kinematics_controller\n'}
+[2.209699] (kinematics_controller) StdoutLine: {'line': b'copying kinematics_controller/__init__.py -> /home/edu/diff_offset_robot/build/kinematics_controller/build/lib/kinematics_controller\n'}
+[2.209955] (kinematics_controller) StdoutLine: {'line': b'copying kinematics_controller/kinematics_node.py -> /home/edu/diff_offset_robot/build/kinematics_controller/build/lib/kinematics_controller\n'}
+[2.210129] (-) TimerEvent: {}
+[2.210433] (kinematics_controller) StdoutLine: {'line': b'copying kinematics_controller/custom_teleop.py -> /home/edu/diff_offset_robot/build/kinematics_controller/build/lib/kinematics_controller\n'}
+[2.212286] (kinematics_controller) StdoutLine: {'line': b'running install\n'}
+[2.212999] (kinematics_controller) StdoutLine: {'line': b'running install_lib\n'}
+[2.214434] (kinematics_controller) StdoutLine: {'line': b'creating /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller\n'}
+[2.214838] (kinematics_controller) StdoutLine: {'line': b'copying /home/edu/diff_offset_robot/build/kinematics_controller/build/lib/kinematics_controller/platform_orientation_controller.py -> /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller\n'}
+[2.215200] (kinematics_controller) StdoutLine: {'line': b'copying /home/edu/diff_offset_robot/build/kinematics_controller/build/lib/kinematics_controller/__init__.py -> /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller\n'}
+[2.215519] (kinematics_controller) StdoutLine: {'line': b'copying /home/edu/diff_offset_robot/build/kinematics_controller/build/lib/kinematics_controller/kinematics_node.py -> /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller\n'}
+[2.215916] (kinematics_controller) StdoutLine: {'line': b'copying /home/edu/diff_offset_robot/build/kinematics_controller/build/lib/kinematics_controller/custom_teleop.py -> /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller\n'}
+[2.216928] (kinematics_controller) StdoutLine: {'line': b'byte-compiling /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/platform_orientation_controller.py to platform_orientation_controller.cpython-310.pyc\n'}
+[2.219225] (kinematics_controller) StdoutLine: {'line': b'byte-compiling /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/__init__.py to __init__.cpython-310.pyc\n'}
+[2.219694] (kinematics_controller) StdoutLine: {'line': b'byte-compiling /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/kinematics_node.py to kinematics_node.cpython-310.pyc\n'}
+[2.223545] (kinematics_controller) StdoutLine: {'line': b'byte-compiling /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller/custom_teleop.py to custom_teleop.cpython-310.pyc\n'}
+[2.225134] (kinematics_controller) StdoutLine: {'line': b'running install_data\n'}
+[2.225677] (kinematics_controller) StdoutLine: {'line': b'creating /home/edu/diff_offset_robot/install/kinematics_controller/share/ament_index\n'}
+[2.226148] (kinematics_controller) StdoutLine: {'line': b'creating /home/edu/diff_offset_robot/install/kinematics_controller/share/ament_index/resource_index\n'}
+[2.226599] (kinematics_controller) StdoutLine: {'line': b'creating /home/edu/diff_offset_robot/install/kinematics_controller/share/ament_index/resource_index/packages\n'}
+[2.226835] (kinematics_controller) StdoutLine: {'line': b'copying resource/kinematics_controller -> /home/edu/diff_offset_robot/install/kinematics_controller/share/ament_index/resource_index/packages\n'}
+[2.226992] (kinematics_controller) StdoutLine: {'line': b'copying package.xml -> /home/edu/diff_offset_robot/install/kinematics_controller/share/kinematics_controller\n'}
+[2.227208] (kinematics_controller) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.230367] (kinematics_controller) StdoutLine: {'line': b'Copying ../../build/kinematics_controller/kinematics_controller.egg-info to /home/edu/diff_offset_robot/install/kinematics_controller/lib/python3.10/site-packages/kinematics_controller-0.0.0-py3.10.egg-info\n'}
+[2.232803] (kinematics_controller) StdoutLine: {'line': b'running install_scripts\n'}
+[2.275772] (kinematics_controller) StdoutLine: {'line': b'Installing analyze_nav2 = loggers.analyze_nav2_results:mainplatform_orientation_controller script to /home/edu/diff_offset_robot/install/kinematics_controller/lib/kinematics_controller\n'}
+[2.276329] (kinematics_controller) StdoutLine: {'line': b'Installing kinematics_node script to /home/edu/diff_offset_robot/install/kinematics_controller/lib/kinematics_controller\n'}
+[2.276699] (kinematics_controller) StdoutLine: {'line': b'Installing nav2_eval script to /home/edu/diff_offset_robot/install/kinematics_controller/lib/kinematics_controller\n'}
+[2.277048] (kinematics_controller) StdoutLine: {'line': b'Installing teleop_node script to /home/edu/diff_offset_robot/install/kinematics_controller/lib/kinematics_controller\n'}
+[2.277323] (kinematics_controller) StdoutLine: {'line': b'Installing wheel_logger script to /home/edu/diff_offset_robot/install/kinematics_controller/lib/kinematics_controller\n'}
+[2.278068] (kinematics_controller) StdoutLine: {'line': b"writing list of installed files to '/home/edu/diff_offset_robot/build/kinematics_controller/install.log'\n"}
+[2.310306] (-) TimerEvent: {}
+[2.318910] (kinematics_controller) CommandEnded: {'returncode': 0}
+[2.342367] (kinematics_controller) JobEnded: {'identifier': 'kinematics_controller', 'rc': 0}
+[2.344197] (-) EventReactorShutdown: {}
