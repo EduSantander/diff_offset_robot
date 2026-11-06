@@ -1,0 +1,5 @@
+diff_offset_kinematics:
+  ros__parameters:
+    wheel_radius: 0.055   #m
+    d1: 0.11225           #m
+    d2: 0.36              #m

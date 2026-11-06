@@ -1,1 +1,0 @@
-/home/edu/diff_offset_robot/build/mob_rob_arm_description/ament_cmake_environment_hooks/local_setup.zsh

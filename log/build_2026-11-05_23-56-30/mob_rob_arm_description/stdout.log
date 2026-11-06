@@ -1,0 +1,36 @@
+running develop
+running egg_info
+creating mob_rob_arm_description.egg-info
+writing mob_rob_arm_description.egg-info/PKG-INFO
+writing dependency_links to mob_rob_arm_description.egg-info/dependency_links.txt
+writing entry points to mob_rob_arm_description.egg-info/entry_points.txt
+writing requirements to mob_rob_arm_description.egg-info/requires.txt
+writing top-level names to mob_rob_arm_description.egg-info/top_level.txt
+writing manifest file 'mob_rob_arm_description.egg-info/SOURCES.txt'
+reading manifest file 'mob_rob_arm_description.egg-info/SOURCES.txt'
+writing manifest file 'mob_rob_arm_description.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/edu/diff_offset_robot/install/mob_rob_arm_description/lib/python3.10/site-packages/mob-rob-arm-description.egg-link (link to .)
+
+Installed /home/edu/diff_offset_robot/build/mob_rob_arm_description
+running symlink_data
+creating /home/edu/diff_offset_robot/install/mob_rob_arm_description/share/ament_index
+creating /home/edu/diff_offset_robot/install/mob_rob_arm_description/share/ament_index/resource_index
+creating /home/edu/diff_offset_robot/install/mob_rob_arm_description/share/ament_index/resource_index/packages
+symbolically linking /home/edu/diff_offset_robot/build/mob_rob_arm_description/resource/mob_rob_arm_description -> /home/edu/diff_offset_robot/install/mob_rob_arm_description/share/ament_index/resource_index/packages
+symbolically linking /home/edu/diff_offset_robot/build/mob_rob_arm_description/package.xml -> /home/edu/diff_offset_robot/install/mob_rob_arm_description/share/mob_rob_arm_description
+creating /home/edu/diff_offset_robot/install/mob_rob_arm_description/share/mob_rob_arm_description/urdf
+symbolically linking /home/edu/diff_offset_robot/build/mob_rob_arm_description/urdf/mob_rob_arm_base.urdf.xacro -> /home/edu/diff_offset_robot/install/mob_rob_arm_description/share/mob_rob_arm_description/urdf
+symbolically linking /home/edu/diff_offset_robot/build/mob_rob_arm_description/urdf/mob_rob_arm.urdf.xacro -> /home/edu/diff_offset_robot/install/mob_rob_arm_description/share/mob_rob_arm_description/urdf
+symbolically linking /home/edu/diff_offset_robot/build/mob_rob_arm_description/urdf/lidar.xacro -> /home/edu/diff_offset_robot/install/mob_rob_arm_description/share/mob_rob_arm_description/urdf
+creating /home/edu/diff_offset_robot/install/mob_rob_arm_description/share/mob_rob_arm_description/meshes
+symbolically linking /home/edu/diff_offset_robot/build/mob_rob_arm_description/meshes/column_link.STL -> /home/edu/diff_offset_robot/install/mob_rob_arm_description/share/mob_rob_arm_description/meshes
+symbolically linking /home/edu/diff_offset_robot/build/mob_rob_arm_description/meshes/base_link.STL -> /home/edu/diff_offset_robot/install/mob_rob_arm_description/share/mob_rob_arm_description/meshes
+symbolically linking /home/edu/diff_offset_robot/build/mob_rob_arm_description/meshes/top_base_link.STL -> /home/edu/diff_offset_robot/install/mob_rob_arm_description/share/mob_rob_arm_description/meshes
+symbolically linking /home/edu/diff_offset_robot/build/mob_rob_arm_description/meshes/left_wheel_link.STL -> /home/edu/diff_offset_robot/install/mob_rob_arm_description/share/mob_rob_arm_description/meshes
+symbolically linking /home/edu/diff_offset_robot/build/mob_rob_arm_description/meshes/basea_link.STL -> /home/edu/diff_offset_robot/install/mob_rob_arm_description/share/mob_rob_arm_description/meshes
+symbolically linking /home/edu/diff_offset_robot/build/mob_rob_arm_description/meshes/right_wheel_link.STL -> /home/edu/diff_offset_robot/install/mob_rob_arm_description/share/mob_rob_arm_description/meshes
+creating /home/edu/diff_offset_robot/install/mob_rob_arm_description/share/mob_rob_arm_description/launch
+symbolically linking /home/edu/diff_offset_robot/build/mob_rob_arm_description/launch/display.launch.py -> /home/edu/diff_offset_robot/install/mob_rob_arm_description/share/mob_rob_arm_description/launch
+creating /home/edu/diff_offset_robot/install/mob_rob_arm_description/share/mob_rob_arm_description/config
+symbolically linking /home/edu/diff_offset_robot/build/mob_rob_arm_description/config/geometry.yaml -> /home/edu/diff_offset_robot/install/mob_rob_arm_description/share/mob_rob_arm_description/config

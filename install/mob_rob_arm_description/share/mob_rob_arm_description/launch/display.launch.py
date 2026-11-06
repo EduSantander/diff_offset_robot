@@ -1,1 +1,1 @@
-/home/edu/diff_offset_robot/src/mob_rob_arm_description/launch/display.launch.py
+/home/edu/diff_offset_robot/build/mob_rob_arm_description/launch/display.launch.py

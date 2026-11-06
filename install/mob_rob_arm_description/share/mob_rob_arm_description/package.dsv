@@ -1,8 +1,9 @@
-source;share/mob_rob_arm_description/hook/cmake_prefix_path.ps1
-source;share/mob_rob_arm_description/hook/cmake_prefix_path.dsv
-source;share/mob_rob_arm_description/hook/cmake_prefix_path.sh
-source;share/mob_rob_arm_description/local_setup.bash
-source;share/mob_rob_arm_description/local_setup.dsv
-source;share/mob_rob_arm_description/local_setup.ps1
-source;share/mob_rob_arm_description/local_setup.sh
-source;share/mob_rob_arm_description/local_setup.zsh
+source;share/mob_rob_arm_description/hook/pythonpath.ps1
+source;share/mob_rob_arm_description/hook/pythonpath.dsv
+source;share/mob_rob_arm_description/hook/pythonpath.sh
+source;share/mob_rob_arm_description/hook/ament_prefix_path.ps1
+source;share/mob_rob_arm_description/hook/ament_prefix_path.dsv
+source;share/mob_rob_arm_description/hook/ament_prefix_path.sh
+source;../../build/mob_rob_arm_description/share/mob_rob_arm_description/hook/pythonpath_develop.ps1
+source;../../build/mob_rob_arm_description/share/mob_rob_arm_description/hook/pythonpath_develop.dsv
+source;../../build/mob_rob_arm_description/share/mob_rob_arm_description/hook/pythonpath_develop.sh
