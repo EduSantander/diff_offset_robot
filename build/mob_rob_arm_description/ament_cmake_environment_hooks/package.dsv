@@ -1,0 +1,4 @@
+source;share/mob_rob_arm_description/local_setup.bash
+source;share/mob_rob_arm_description/local_setup.dsv
+source;share/mob_rob_arm_description/local_setup.sh
+source;share/mob_rob_arm_description/local_setup.zsh

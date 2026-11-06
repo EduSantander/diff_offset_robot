@@ -1,0 +1,38 @@
+[0.937s] Invoking command in '/home/edu/diff_offset_robot/build/model_robot': PYTHONPATH=/home/edu/diff_offset_robot/build/model_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/edu/diff_offset_robot/install/model_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/edu/diff_offset_robot/build/model_robot/build --no-deps symlink_data
+[1.144s] running develop
+[1.273s] running egg_info
+[1.273s] creating model_robot.egg-info
+[1.273s] writing model_robot.egg-info/PKG-INFO
+[1.273s] writing dependency_links to model_robot.egg-info/dependency_links.txt
+[1.274s] writing entry points to model_robot.egg-info/entry_points.txt
+[1.274s] writing requirements to model_robot.egg-info/requires.txt
+[1.274s] writing top-level names to model_robot.egg-info/top_level.txt
+[1.274s] writing manifest file 'model_robot.egg-info/SOURCES.txt'
+[1.275s] reading manifest file 'model_robot.egg-info/SOURCES.txt'
+[1.275s] writing manifest file 'model_robot.egg-info/SOURCES.txt'
+[1.276s] running build_ext
+[1.276s] Creating /home/edu/diff_offset_robot/install/model_robot/lib/python3.10/site-packages/model-robot.egg-link (link to .)
+[1.277s] 
+[1.277s] Installed /home/edu/diff_offset_robot/build/model_robot
+[1.277s] running symlink_data
+[1.277s] creating /home/edu/diff_offset_robot/install/model_robot/share/ament_index
+[1.277s] creating /home/edu/diff_offset_robot/install/model_robot/share/ament_index/resource_index
+[1.278s] creating /home/edu/diff_offset_robot/install/model_robot/share/ament_index/resource_index/packages
+[1.278s] symbolically linking /home/edu/diff_offset_robot/build/model_robot/resource/model_robot -> /home/edu/diff_offset_robot/install/model_robot/share/ament_index/resource_index/packages
+[1.278s] symbolically linking /home/edu/diff_offset_robot/build/model_robot/package.xml -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot
+[1.278s] creating /home/edu/diff_offset_robot/install/model_robot/share/model_robot/urdf
+[1.278s] symbolically linking /home/edu/diff_offset_robot/build/model_robot/urdf/diff_offset_robot.urdf.xacro -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/urdf
+[1.278s] creating /home/edu/diff_offset_robot/install/model_robot/share/model_robot/launch
+[1.278s] symbolically linking /home/edu/diff_offset_robot/build/model_robot/launch/gazebo.launch.py -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/launch
+[1.278s] symbolically linking /home/edu/diff_offset_robot/build/model_robot/launch/display.launch.py -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/launch
+[1.279s] symbolically linking /home/edu/diff_offset_robot/build/model_robot/launch/robot_nav2.launch.py -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/launch
+[1.279s] creating /home/edu/diff_offset_robot/install/model_robot/share/model_robot/meshes
+[1.279s] symbolically linking /home/edu/diff_offset_robot/build/model_robot/meshes/body_wheel_link.STL -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/meshes
+[1.279s] symbolically linking /home/edu/diff_offset_robot/build/model_robot/meshes/lidar_link.STL -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/meshes
+[1.279s] symbolically linking /home/edu/diff_offset_robot/build/model_robot/meshes/base_link.STL -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/meshes
+[1.279s] symbolically linking /home/edu/diff_offset_robot/build/model_robot/meshes/top_base_link.STL -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/meshes
+[1.279s] symbolically linking /home/edu/diff_offset_robot/build/model_robot/meshes/left_wheel_link.STL -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/meshes
+[1.279s] symbolically linking /home/edu/diff_offset_robot/build/model_robot/meshes/caster_wheel_link.STL -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/meshes
+[1.279s] symbolically linking /home/edu/diff_offset_robot/build/model_robot/meshes/right_wheel_link.STL -> /home/edu/diff_offset_robot/install/model_robot/share/model_robot/meshes
+[1.279s] error: can't copy '/home/edu/diff_offset_robot/build/model_robot/meshes/ur10': doesn't exist or not a regular file
+[1.314s] Invoked command in '/home/edu/diff_offset_robot/build/model_robot' returned '1': PYTHONPATH=/home/edu/diff_offset_robot/build/model_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/edu/diff_offset_robot/install/model_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/edu/diff_offset_robot/build/model_robot/build --no-deps symlink_data

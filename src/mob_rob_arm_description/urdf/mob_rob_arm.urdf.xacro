@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="mob_rob_arm">
+
+  <!-- Giro del brazo sobre Z respecto a basea_link (rad). Con 0, en q=0 apunta a +X del robot -->
+  <xacro:arg name="arm_yaw" default="0.0"/>
+  <xacro:arg name="ur_type" default="ur10"/>
+
+  <xacro:include filename="$(find mob_rob_arm_description)/urdf/mob_rob_arm_base.urdf.xacro"/>
+  <xacro:include filename="$(find mob_rob_arm_description)/urdf/lidar.xacro"/>
+  <xacro:include filename="$(find ur_description)/urdf/ur_macro.xacro"/>
+
+  <xacro:ur_robot
+    name="ur10"
+    tf_prefix="ur10_"
+    parent="basea_link"
+    ur_type="$(arg ur_type)"
+    joint_limits_parameters_file="$(find ur_description)/config/$(arg ur_type)/joint_limits.yaml"
+    kinematics_parameters_file="$(find ur_description)/config/$(arg ur_type)/default_kinematics.yaml"
+    physical_parameters_file="$(find ur_description)/config/$(arg ur_type)/physical_parameters.yaml"
+    visual_parameters_file="$(find ur_description)/config/$(arg ur_type)/visual_parameters.yaml"
+    generate_ros2_control_tag="false">
+    <origin xyz="0 0 0" rpy="0 0 $(arg arm_yaw)"/>
+  </xacro:ur_robot>
+
+  <!-- LiDAR en el chasis: 300 mm en X y 160.655 mm en Z desde el origen de base_link -->
+  <xacro:lidar name="lidar_link" parent="base_link" xyz="0.300 0 0.160655" rpy="0 0 0"/>
+
+</robot>
